@@ -94,7 +94,7 @@ body{
   border-bottom: 2px solid var(--green);
 }
 .brand{
-  font-family: "Quicksand",sans-serif;
+  font-family:sans-serif;
   font-weight: 600;
   font-size: 18px;
   z-index: 1;
@@ -133,7 +133,7 @@ body{
 
 .window-content{
   padding: 20px;
-  font-family: "Inter";
+  font-family: sans-serif;
 }
 
 .window-bar button{
@@ -142,4 +142,31 @@ body{
   color: #f4eed8;
   font-size: 20px;
   cursor: pointer;
+}
+.minimize-btn{
+  width:30px;
+    transition: 0.3s;
+  border-radius: 50%;
+}
+.minimize-btn:hover{
+  transform: scale(1.02);
+   background-color: rgb(13, 236, 114);
+}
+.close-btn{
+  width: 30px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.close-btn:hover{
+  transform: scale(1.02);
+  background-color: rgb(235, 53, 53);
+}
+.full-btn{
+  width: 30px;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+.full-btn:hover{
+  transform: scale(1.02);
+   background-color: rgb(255, 97, 5);
 }
