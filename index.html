@@ -1,28 +1,81 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PixlOS</title>
-    
-    <link rel="stylesheet" href="style.css">
 
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
 
-   <!-- PixlOS Desktop -->
+    <!-- PixlOS Desktop -->
     <main class="desktop">
 
+      <header class="top-bar">
+        <div class="brand" id="brand">PixelOS</div>
 
-        <!-- Dock -->
-        <nav class="dock">
-            
-        </nav>
+        <div class="stystem-info">
+          <span id="clock">00:00</span>
+        </div>
+      </header>
+
+      <section class="desktop-content">
+        <!--apps-->
+
+        <!--start of gallery-->
+        <div id="gallery-window" class="window">
+          <div class="window-bar">
+            <span>WildGallery</span>
+            <img
+              src="assets/icons/fullscreen.png"
+              id="fullscreen-gallery"
+              class="full-btn"
+            />
+            <img
+              src="assets/icons/close.png"
+              id="close-gallery"
+              class="close-btn"
+            />
+          </div>
+
+        <div class="window-content">
+            <div class="gallery">
+              <div class="gallery-item">
+                <img src="assets/gallery/cat.png" alt="Photo" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/gallery/fox.jpg" alt="Photo" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/gallery/forest.jpg" alt="Photo" />
+              </div>
+
+              <div class="gallery-item">
+                <img src="assets/gallery/rabbit.jpg" alt="Photo" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--end of gallery-->
+
+      </section>
+
+      <!-- Dock -->
+      <div class="dock">
+        
+    <img class="dock-app" id="open-notes" title="wildnotes" src="assets/icons/settings_icon.png">
+
+    <img class="dock-app" id="open-music" title="wildmusic" src="assets/icons/settings_icon.png">
+      </div>
+
 
     </main>
 
-    <script src="script.js"></script>
-    
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>

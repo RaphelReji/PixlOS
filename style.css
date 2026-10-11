@@ -1,3 +1,21 @@
+:root {
+    --bg: #0B120E;
+    --surface: #e2ebe5;
+    --surface-light: #1B2A20;
+    --green: #6FAF78;
+    --green-dark: #315C3A;
+    --leaf: #9BCB8B;
+    --windowbar:#0d39ff;
+    --text: #F2F5F0;
+    --bgdock:#0f1219b8;
+    --bgdockapp:#ffffff14;
+    --text-muted: #A8B5AA;
+    --border: #ffffff1f;
+    --upperdock:#47321371;
+    --glass: #0f1912b8;
+    --shadow: #00000059;
+    --sound:#153825cb;
+}
 *{
     margin: 0;
     padding: 0;
@@ -7,7 +25,7 @@ body{
     min-height: 100vh;
     overflow: hidden;
     background: #080b14;
-    color: white;
+    color: black;
 }
 
 .desktop {
@@ -17,12 +35,111 @@ body{
     background: #080b14;
 }
 .dock {
-    position: absolute;
-    bottom: 20px;
+    position: fixed;
+    bottom: 18px;
     left: 50%;
     transform: translateX(-50%);
-    width: 500px;
-    height: 65px;
-    border-radius: 18px;
-    background: #151a27;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 14px;
+    background: var(--bgdock);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    z-index: 1000;
+}
+
+.dock-app {
+    width: 48px;
+    height: 48px;
+    border: none;
+    border-radius: 14px;
+    background:var(--bgdockapp);
+    color: white;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+.dock-app:hover {
+    transform: translateY(-10px) scale(1.12);
+
+    background: rgba(255, 255, 255, 0.16);
+}
+.dock-app.active::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+.dock-app{
+  position: relative;
+}
+.top-bar {
+  height: 56px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--upperdock);
+  border-bottom: 2px solid var(--green);
+}
+.brand{
+  font-family: "Quicksand",sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  z-index: 1;
+}
+.desktop-content{
+  padding: 40px;
+}
+
+.window{
+  position:absolute;
+  left: 180px;
+  top: 150px;
+   width: min(500px, calc(100vw - 20px)); 
+  height:max-content;
+  background: var(--surface);
+  border: 1px solid #6e8f59;
+  border-radius: 14px;
+  overflow: auto;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+.window-bar{
+  height: 45px;
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--windowbar);
+  cursor: grab;
+  user-select: none;
+}
+.window-bar span{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.window-content{
+  padding: 20px;
+  font-family: "Inter";
+}
+
+.window-bar button{
+  border: none;
+  background: transparent;
+  color: #f4eed8;
+  font-size: 20px;
+  cursor: pointer;
 }
