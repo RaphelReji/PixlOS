@@ -1,20 +1,45 @@
 :root {
-    --bg: #0B120E;
-    --surface: #e2ebe5;
-    --surface-light: #1B2A20;
-    --green: #6FAF78;
-    --green-dark: #315C3A;
-    --leaf: #9BCB8B;
-    --windowbar:#0d39ff;
-    --text: #F2F5F0;
-    --bgdock:#0f1219b8;
-    --bgdockapp:#ffffff14;
-    --text-muted: #A8B5AA;
-    --border: #ffffff1f;
-    --upperdock:#47321371;
-    --glass: #0f1912b8;
-    --shadow: #00000059;
-    --sound:#153825cb;
+    /* Main desktop */
+    --bg-primary: #008080;
+    --bg-secondary: #C0C0C0;
+    --bg-tertiary: #DFDFDF;
+
+    /* Classic 90s window colors */
+    --window-bg: #C0C0C0;
+    --window-title: #000080;
+    --window-title-text: #FFFFFF;
+    --window-border-light: #FFFFFF;
+    --window-border-dark: #404040;
+
+    /* Buttons */
+    --button-bg: #C0C0C0;
+    --button-hover: #D6D6D6;
+    --button-active: #A0A0A0;
+
+    /* Text */
+    --text-primary: #000000;
+    --text-secondary: #404040;
+    --text-light: #FFFFFF;
+    --text-disabled: #808080;
+
+    /* Desktop icons and taskbar */
+    --taskbar-bg: #C0C0C0;
+    --taskbar-border: #FFFFFF;
+    --desktop-icon-hover: #000080;
+    --selection-bg: #000080;
+    --selection-text: #FFFFFF;
+
+    /* Retro accent colors */
+    --accent-blue: #0000FF;
+    --accent-teal: #008080;
+    --accent-green: #008000;
+    --accent-yellow: #FFFF00;
+    --accent-red: #FF0000;
+
+    /* Extra nostalgic effects */
+    --pixel-black: #000000;
+    --screen-glow: #00FFFF;
+    --crt-overlay: rgba(0, 0, 0, 0.08);
 }
 *{
     margin: 0;
@@ -36,17 +61,17 @@ body{
 }
 .dock {
     position: fixed;
-    bottom: 18px;
-    left: 50%;
-    transform: translateX(-50%);
+    width: 100%;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
     display: flex;
     align-items: center;
     gap: 10px;
     padding: 10px 14px;
-    background: var(--bgdock);
+    background: var(--taskbar-bg);
     backdrop-filter: blur(20px);
     border: 1px solid rgba(255, 255, 255, 0.12);
-    border-radius: 22px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
     z-index: 1000;
 }
@@ -109,9 +134,8 @@ body{
   top: 150px;
    width: min(500px, calc(100vw - 20px)); 
   height:max-content;
-  background: var(--surface);
+  background: var(--window-bg);
   border: 1px solid #6e8f59;
-  border-radius: 14px;
   overflow: auto;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
@@ -121,7 +145,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--windowbar);
+  background: var(--window-title);
   cursor: grab;
   user-select: none;
 }
