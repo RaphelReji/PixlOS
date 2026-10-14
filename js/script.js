@@ -8,8 +8,25 @@ function updateClock(){
 updateClock();
 setInterval(updateClock,1000);
 
+const form= document.querySelector("#search-form");
+const search=document.querySelector("#search");
+form.addEventListener("submit",function(event){
+        event.preventDefault();
+
+    const query = search.value.trim();
+
+    if (!query) return;
+
+    window.location.href =
+        "https://www.google.com/search?q=" +
+        encodeURIComponent(query);
+
+});
+
 const startWindow=document.getElementById("start-window");
 const notesWindow=document.getElementById("notes-window");
+const settingsWindow=document.getElementById("settings-window");
+const browserWindow=document.getElementById("browser-window");
 
 let highestZIndex = 100;
 
@@ -69,6 +86,14 @@ makeDraggable(
     notesWindow,
     notesWindow.querySelector(".window-bar")
 );
+makeDraggable(
+    settingsWindow,
+    settingsWindow.querySelector(".window-bar")
+);
+makeDraggable(
+    browserWindow,
+    browserWindow.querySelector(".window-bar")
+);
 
 const closeStart=document.getElementById("close-start");
 closeStart.addEventListener("click",function(){
@@ -90,4 +115,36 @@ openNotes.addEventListener("click",  function(){
 const closeNotes=document.getElementById("close-notes");
 closeNotes.addEventListener("click",function(){
     notesWindow.style.display="none";
+});
+
+const openSettings=document.getElementById("open-settings");
+openSettings.addEventListener("click",  function(){
+    if (settingsWindow.style.display==="block"){
+        settingsWindow.style.display="none";
+    }
+
+    else{
+        settingsWindow.style.display="block";
+    }
+}
+);
+const closeSettings=document.getElementById("close-settings");
+closeSettings.addEventListener("click",function(){
+    settingsWindow.style.display="none";
+});
+
+const openBrowser=document.getElementById("open-browser");
+openBrowser.addEventListener("click",  function(){
+    if (browserWindow.style.display==="block"){
+        browserWindow.style.display="none";
+    }
+
+    else{
+        browserWindow.style.display="block";
+    }
+}
+);
+const closeBrowser=document.getElementById("close-browser");
+closeBrowser.addEventListener("click",function(){
+    browserWindow.style.display="none";
 });
