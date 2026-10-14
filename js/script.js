@@ -64,3 +64,8 @@ makeDraggable(
     startWindow,
     startWindow.querySelector(".window-bar")
 );
+
+const closeStart=document.getElementById("close-start");
+closeStart.addEventListener("click",function(){
+    startWindow.style.display="none";
+})
