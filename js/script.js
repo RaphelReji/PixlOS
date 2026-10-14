@@ -9,6 +9,7 @@ updateClock();
 setInterval(updateClock,1000);
 
 const startWindow=document.getElementById("start-window");
+const notesWindow=document.getElementById("notes-window");
 
 let highestZIndex = 100;
 
@@ -64,8 +65,29 @@ makeDraggable(
     startWindow,
     startWindow.querySelector(".window-bar")
 );
+makeDraggable(
+    notesWindow,
+    notesWindow.querySelector(".window-bar")
+);
 
 const closeStart=document.getElementById("close-start");
 closeStart.addEventListener("click",function(){
     startWindow.style.display="none";
-})
+});
+
+
+const openNotes=document.getElementById("open-notes");
+openNotes.addEventListener("click",  function(){
+    if (notesWindow.style.display==="block"){
+        notesWindow.style.display="none";
+    }
+
+    else{
+        notesWindow.style.display="block";
+    }
+}
+);
+const closeNotes=document.getElementById("close-notes");
+closeNotes.addEventListener("click",function(){
+    notesWindow.style.display="none";
+});

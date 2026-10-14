@@ -25,16 +25,14 @@
       <section class="desktop-content">
         <!--apps-->
 
-        <!--start of gallery-->
+        <!--start of start-->
         <div id="start-window" class="window">
           <div class="window-bar">
             <span>Welcome to PixlOS</span>
 
-            <img src="assets/icons_2/full-screen.png" id="fullscreen-gallery" class="full-btn" />
+            <button id="minimize-start" class="minimize-btn">-</button>
 
-           <img src="assets/icons_2/minimize.png" id="minimize-gallery" class="minimize-btn"/>
-
-            <img src="assets/icons_2/close.png" id="close-start" class="close-btn"/>
+            <button id="close-start" class="close-btn">x</button>
           </div>
 
         <div class="window-content">
@@ -50,16 +48,18 @@
           </div>
 
         </div>
-        <!--end of gallery-->
+        <!--end of start-->
 
 
 
         
 <div id="notes-window" class="window">
     <div class="window-bar">
-        <span>DAIRY</span>
-        <img src="assets/icons/fullscreen.png" id="fullscreen-notes" class="full-btn">
-    <img src="assets/icons/close.png" id="close-notes" class="close-btn">
+        <span>Notes</span>
+
+           <button id="minimize-notes" class="minimize-btn">-</button>
+
+            <button id="close-notes" class="close-btn">x</button>
     </div>
 
     <div class="window-content">
@@ -93,23 +93,46 @@
 
 </div>
 
+
+
+   <!--start of start-->
+        <div id="browser-window" class="window">
+          <div class="window-bar">
+            <span>Browser</span>
+
+            <button id="minimize-start" class="minimize-btn">-</button>
+
+            <button id="close-start" class="close-btn">x</button>
+          </div>
+
+        <div class="window-content">
+
+         <iframe src="https://www.google.com/" id="browser-frame"></iframe>
+  
+          </div>
+
+        </div>
+        <!--end of start-->
+
       </section>
+
+
 
       <!-- Dock -->
       <div class="dock">
 
         <button id="start-btn">Start</button>
         
-    <img class="dock-app" id="open-notes" title="wildnotes" src="assets/icons/world-2.png">
+    <img class="dock-app" id="open-not" title="wildnotes" src="assets/icons/world-2.png">
 
-    <img class="dock-app" id="open-music" title="wildmusic" src="assets/icons/notepad.png">
+    <img class="dock-app" id="open-notes" title="wildmusic" src="assets/icons/notepad.png">
 
-        <img class="dock-app" id="open-notes" title="wildnotes" src="assets/icons/music.png">
+        <img class="dock-app" id="open-no" title="wildnotes" src="assets/icons/music.png">
 
     <img class="dock-app" id="open-music" title="wildmusic" src="assets/icons/image_editor.png">
 
 
-        <img class="dock-app" id="open-notes" title="wildnotes" src="assets/icons/files.png">
+        <img class="dock-app" id="open-no" title="wildnotes" src="assets/icons/files.png">
 
     <img class="dock-app" id="open-music" title="wildmusic" src="assets/icons/settings.png">
 
