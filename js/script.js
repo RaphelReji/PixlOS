@@ -8,7 +8,7 @@ function updateClock(){
 updateClock();
 setInterval(updateClock,1000);
 
-const galleryWindow=document.getElementById("gallery-window");
+const startWindow=document.getElementById("start-window");
 
 let highestZIndex = 100;
 
@@ -61,6 +61,6 @@ function makeDraggable(windowElement, header) {
 
 
 makeDraggable(
-    galleryWindow,
-    galleryWindow.querySelector(".window-bar")
+    startWindow,
+    startWindow.querySelector(".window-bar")
 );

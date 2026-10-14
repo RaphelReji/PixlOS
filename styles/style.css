@@ -51,6 +51,7 @@ body{
     overflow: hidden;
     background: #080b14;
     color: black;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .desktop {
@@ -62,16 +63,16 @@ body{
 .dock {
     position: fixed;
     width: 100%;
-    bottom: 5px;
+    bottom: 2px;
     left: 5px;
     right: 5px;
     display: flex;
     align-items: center;
     gap: 10px;
-    padding: 10px 14px;
+    padding: 1px 20px;
     background: var(--taskbar-bg);
     backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.12);
+    border: 1px solid var(--taskbar-border);
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
     z-index: 1000;
 }
@@ -81,7 +82,7 @@ body{
     height: 48px;
     border: none;
     border-radius: 14px;
-    background:var(--bgdockapp);
+    background:var(--bg-secondary);
     color: white;
     font-size: 23px;
     display: flex;
@@ -95,7 +96,7 @@ body{
 .dock-app:hover {
     transform: translateY(-10px) scale(1.12);
 
-    background: rgba(255, 255, 255, 0.16);
+    background: var(--desktop-icon-hover);
 }
 .dock-app.active::after {
     content: "";
@@ -115,11 +116,10 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: var(--upperdock);
-  border-bottom: 2px solid var(--green);
+  background: var(--bg-secondary);
+  border-bottom: 2px solid var(--window-border-dark);
 }
 .brand{
-  font-family:sans-serif;
   font-weight: 600;
   font-size: 18px;
   z-index: 1;
@@ -135,7 +135,7 @@ body{
    width: min(500px, calc(100vw - 20px)); 
   height:max-content;
   background: var(--window-bg);
-  border: 1px solid #6e8f59;
+  border: 5px groove var(--window-border-dark);
   overflow: auto;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
 }
@@ -153,6 +153,7 @@ body{
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  color: var(--window-title-text);
 }
 
 .window-content{
@@ -193,4 +194,28 @@ body{
 .full-btn:hover{
   transform: scale(1.02);
    background-color: rgb(255, 97, 5);
+}
+#start-btn{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: var(--button-bg);
+  border-radius: 0;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 1px black;
+  border: 2px solid var(--window-border-dark);
+  transition: 0.3s;
+}
+#start-btn:hover{
+  color: var(--text-light);
+ background-color: var(--selection-bg);
+ border: 2px solid var(--button-hover);
+
+ 
+}
+.stystem-info{
+  background-color: var(--bg-tertiary);
+  padding: 10px 20px;
+  border: 2px solid var(--window-border-light);
+  font-weight: bold;
 }
