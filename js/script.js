@@ -8,6 +8,16 @@ function updateClock(){
 updateClock();
 setInterval(updateClock,1000);
 
+const browserTime=document.getElementById("browser-time");
+function updateBrowsertime(){
+    const now1 = new Date();
+    browserTime.textContent=now1.toLocaleTimeString();
+}
+
+updateBrowsertime();
+setInterval(updateBrowsertime,1000);
+
+
 const form= document.querySelector("#search-form");
 const search=document.querySelector("#search");
 form.addEventListener("submit",function(event){
@@ -27,6 +37,7 @@ const startWindow=document.getElementById("start-window");
 const notesWindow=document.getElementById("notes-window");
 const settingsWindow=document.getElementById("settings-window");
 const browserWindow=document.getElementById("browser-window");
+const filesWindow=document.getElementById("files-window");
 
 let highestZIndex = 100;
 
@@ -94,6 +105,10 @@ makeDraggable(
     browserWindow,
     browserWindow.querySelector(".window-bar")
 );
+makeDraggable(
+    filesWindow,
+    filesWindow.querySelector(".window-bar")
+);
 
 const closeStart=document.getElementById("close-start");
 closeStart.addEventListener("click",function(){
@@ -147,4 +162,21 @@ openBrowser.addEventListener("click",  function(){
 const closeBrowser=document.getElementById("close-browser");
 closeBrowser.addEventListener("click",function(){
     browserWindow.style.display="none";
+});
+
+
+const openFiles=document.getElementById("open-files");
+openFiles.addEventListener("click",  function(){
+    if (filesWindow.style.display==="block"){
+        filesWindow.style.display="none";
+    }
+
+    else{
+        filesWindow.style.display="block";
+    }
+}
+);
+const closeFiles=document.getElementById("close-files");
+closeFiles.addEventListener("click",function(){
+    filesWindow.style.display="none";
 });

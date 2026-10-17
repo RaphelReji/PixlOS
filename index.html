@@ -106,6 +106,8 @@
           </div>
 
         <div class="window-content">
+
+          <span id="browser-time">00:00</span>
              
              <form id="search-form">
       <input id="search" type="text" placeholder="search" autocomplete="off">
@@ -250,31 +252,31 @@
 
             <button id="minimize-start" class="minimize-btn">-</button>
 
-            <button id="close-browser" class="close-btn">x</button>
+            <button id="close-files" class="close-btn">x</button>
           </div>
 
         <div class="window-content">
 
           <div id="files-topbar">
-            <span> < </span>
-            <span> > </span>
+            <span id="previous-file"> < </span>
+            <span id="next-file"> > </span>
 
-            <div>This PC</div>
+            <div id="selected-file-show">This PC</div>
 
-            <input type="search" autocomplete="off" placeholder="Search">
+            <input type="search" autocomplete="off" placeholder=" Search" id="files-search">
 
           </div>
              
-         <div id="files-main-"><!--files div grid start-->
+         <div id="files-main-grid"><!--files div grid start-->
 
-         <div>
-           <div>This PC</div>
-           <div>Documents</div>
-           <div>Pictures</div>
-           <div>Music</div>
-           <div>Videos</div>
-           <div>Downloads</div>
-           <div>Devices</div>
+         <div id="file-name-main-grid">
+           <div class="file-name-main">This PC</div>
+           <div class="file-name-main">Documents</div>
+           <div class="file-name-main">Pictures</div>
+           <div class="file-name-main">Music</div>
+           <div class="file-name-main">Videos</div>
+           <div class="file-name-main">Downloads</div>
+           <div class="file-name-main">Devices</div>
          </div>
 
 
@@ -313,7 +315,7 @@
     <img class="dock-app" id="open-music" title="wildmusic" src="assets/icons/image_editor.png">
 
 
-        <img class="dock-app" id="open-no" title="wildnotes" src="assets/icons/files.png">
+        <img class="dock-app" id="open-files" title="wildnotes" src="assets/icons/files.png">
 
 
       </div>

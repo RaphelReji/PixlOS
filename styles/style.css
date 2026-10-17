@@ -354,15 +354,63 @@ min-height: fit-content;
 .wallpaper-img:hover{
   transform: scale(1.03);
 }
-#files-window{
-  display: block;
-}
 #files-topbar{
     display: flex;
    gap: 20px;
-   background-color: var(--pixel-black);
+   background-color: var(--taskbar-bg);
+   border: 1px solid var(--button-active);
    color: var(--text-light);
    padding: 10px;
    border-radius: 10px;
    width: 100%;
+   align-items: center;
+}
+#files-search{
+  margin-left: auto;
+  background-color: var(--button-active);
+  height: 30px;
+  border-radius: 10px;
+  
+}
+#selected-file-show{
+  margin-left: auto;
+  background-color: var(--bg-tertiary);
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: var(--pixel-black);
+  border: 1px solid var(--text-disabled);
+}
+#files-main-grid{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  margin-top: 10px;
+}
+.file-name-main{
+  padding: 10px 20px;
+  transition: 0.3s;
+}
+.file-name-main:hover{
+  transform: scale(1.02) translateY(-1px);
+  background-color: var(--bg-tertiary);
+}
+#file-name-main-grid{
+  border-right:2px solid var(--window-border-light) ;
+}
+#previous-file{
+  background-color: var(--button-active);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#previous-file:hover{
+  transform: scale(1.03);
+}
+#next-file{
+  background-color: var(--button-active);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+#next-file:hover{
+  transform: scale(1.03);
 }

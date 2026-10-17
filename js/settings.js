@@ -46,7 +46,7 @@ systemBtn.addEventListener("click",function(){
 aboutBtn.addEventListener("click",function(){
     aboutWindow.style.display="block";
     systemWindow.style.display="none";
-    soundWindow.style.display="none";    
+     soundWindow.style.display="none";    
     wallpaperWindow.style.display="none";    
     appearanceWindow.style.display="none";
 });
