@@ -317,16 +317,43 @@ min-height: fit-content;
     margin: 10px auto;
 }
 #search{
-  width: 170px;
+  width: 200px;
   height: 30px;
   background-color: transparent;
 }
 #search-form button{
   height: 30px;
-  width: 30px;
+  width:40px;
   background-color: transparent;
 }
-
+#browser-time{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.browser-icons{
+  width: 48px;
+ margin: 0 auto;
+}
+.browser-box{
+  width: 100px;
+  align-items: center;
+  text-align: center;
+  border: 1px solid var(--pixel-black);
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.browser-box:hover{
+  background-color: var(--bg-tertiary);
+  transform: scale(1.04) translateY(-5px);
+}
+#browser-box-container{
+  display: flex;
+  gap: 10px;
+  margin: 20px 100px;
+}
 #wallpaper-window{
   display: none;
 }
