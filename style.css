@@ -17,7 +17,7 @@
     --button-active: #A0A0A0;
 
     /* Text */
-    --text-primary: #000000;
+    --text-primary: #645858;
     --text-secondary: #404040;
     --text-light: #FFFFFF;
     --text-disabled: #808080;
@@ -50,7 +50,7 @@ body{
     min-height: 100vh;
     overflow: hidden;
     background: #080b14;
-    color: black;
+    color: var(--text-primary);
     font-family:'Courier New', Courier, monospace;
 }
 
@@ -269,9 +269,6 @@ min-height: fit-content;
   box-shadow: 1px 1px 10px var(--pixel-black);
   transform: translateY(-10px);
 }
-#appearance-btn{
-  background-color: var(--button-hover);
-}
 .appear-h1{
   text-align: center;
 }
@@ -319,13 +316,26 @@ min-height: fit-content;
   align-items: center;
 }
 #wood-theme{
-  background-color: rgb(241, 216, 168);
+  background-color: #f1d8a8;
 }
 #red-theme{
   background-color: rgb(247, 117, 117);
 }
 #hacker-theme{
   background-color: rgb(66, 255, 8);
+}
+
+#reset-btn{
+  background-color: var(--button-active);
+  width: min-content;
+  padding: 10px 20px;
+  margin: 10px auto;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+#reset-btn:hover{
+  padding: 5px 10px;
+  transform: scale(1.03);
 }
 #search-form{
   width: fit-content;
@@ -457,3 +467,4 @@ min-height: fit-content;
 #next-file:hover{
   transform: scale(1.03);
 }
+

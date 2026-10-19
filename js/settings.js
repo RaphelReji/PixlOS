@@ -104,3 +104,53 @@ document.querySelector("#day-theme-btn").onclick=()=>{
     root.style.setProperty("--taskbar-border","white")
     root.style.setProperty("--window-border-dark","white")
 }
+
+document.querySelector("#night-theme-btn").onclick=()=>{
+    root.style.setProperty("--window-bg","#2b2c2a")
+    root.style.setProperty("--window-title","#070707")
+    root.style.setProperty("--text-primary","white")
+    root.style.setProperty("--taskbar-border","grey")
+    root.style.setProperty("--window-border-dark","black")
+    root.style.setProperty("--button-hover","#2c2b2b")
+    root.style.setProperty("--text-light","#ece6e6")
+}
+
+document.querySelector("#wood-theme").onclick=()=>{
+    root.style.setProperty("--window-bg","#f1d8a8")
+    root.style.setProperty("--window-title","#ece1bb")
+    root.style.setProperty("--text-primary","black")
+    root.style.setProperty("--taskbar-border","grey")
+    root.style.setProperty("--window-border-dark","black")
+    root.style.setProperty("--button-hover","#eeddbc")
+    root.style.setProperty("--text-light","#ece6e6")
+}
+
+document.querySelector("#red-theme").onclick=()=>{
+    root.style.setProperty("--window-bg","#e65d5d")
+    root.style.setProperty("--window-title","#f38383")
+    root.style.setProperty("--text-primary","white")
+    root.style.setProperty("--taskbar-border","black")
+    root.style.setProperty("--window-border-dark","black")
+    root.style.setProperty("--button-hover","#f88f8f")
+    root.style.setProperty("--text-light","#ece6e6")
+}
+
+document.querySelector("#hacker-theme").onclick=()=>{
+    root.style.setProperty("--window-bg","#3dec45")
+    root.style.setProperty("--window-title","#9ce969")
+    root.style.setProperty("--text-primary","black")
+    root.style.setProperty("--taskbar-border","yellowgreen")
+    root.style.setProperty("--window-border-dark","black")
+    root.style.setProperty("--button-hover","#95db6c")
+    root.style.setProperty("--text-light","#ece6e6")
+}
+
+document.querySelector("#reset-btn").onclick=()=>{
+    root.style.setProperty("--window-bg","#C0C0C0")
+    root.style.setProperty("--window-title","#000080")
+    root.style.setProperty("--text-primary","#000000")
+    root.style.setProperty("--taskbar-border","#FFFFFF")
+    root.style.setProperty("--window-border-dark","#404040")
+    root.style.setProperty("--button-hover","#D6D6D6")
+    root.style.setProperty("--text-light","#FFFFFF")
+}
