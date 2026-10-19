@@ -92,3 +92,15 @@ const sheepBg=document.getElementById("sheep-bg");
 sheepBg.addEventListener("click",function(){
  desktop.style.backgroundImage="url(assets/background/sheep.jpg)"
 });
+
+
+
+const root=document.documentElement;
+
+document.querySelector("#day-theme-btn").onclick=()=>{
+    root.style.setProperty("--window-bg","white")
+    root.style.setProperty("--window-title","#a5aaa3")
+    root.style.setProperty("--text-primary","black")
+    root.style.setProperty("--taskbar-border","white")
+    root.style.setProperty("--window-border-dark","white")
+}

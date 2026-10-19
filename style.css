@@ -280,13 +280,27 @@ min-height: fit-content;
   padding: 10px 20px;
   background-color: var(--pixel-black);
   color: var(--text-light);
-  margin: 30px 30px;
+  text-align: center;
+  margin: 20px;
+  border: 1px solid var(--button-bg);
+ transition: 0.3s;
 }
+#day-theme-btn:hover{
+  transform: scale(1.03);
+}
+#night-theme-btn:hover{
+  transform: scale(1.03);
+}
+
 #appearance-window{
   align-items: center;
   justify-content: center;
 }
 #theme-btns{
+  display: flex;
+   width: min-content;
+   margin-top: 10px;
+  align-items: center;
   margin: 0px auto;
   align-items: center;
 }
@@ -302,7 +316,6 @@ min-height: fit-content;
 }
 #accent-btns{
   display: flex;
-  gap: 10px;
   align-items: center;
 }
 #wood-theme{
