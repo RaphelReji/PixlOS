@@ -50,3 +50,45 @@ aboutBtn.addEventListener("click",function(){
     wallpaperWindow.style.display="none";    
     appearanceWindow.style.display="none";
 });
+
+const desktop=document.getElementById("desktop");
+
+const catBg=document.getElementById("cat-bg");
+catBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/cat.jpg)"
+});
+
+const dayBg=document.getElementById("day-bg");
+dayBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/day.jpg)"
+});
+
+const eagleBg=document.getElementById("eagle-bg");
+eagleBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/eagle.jpg)"
+});
+
+const kitBg=document.getElementById("kit-bg");
+kitBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/kit.jpg)"
+});
+
+const natureBg=document.getElementById("nature-bg");
+natureBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/nature.jpg)"
+});
+
+const nightBg=document.getElementById("night-bg");
+nightBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/night.jpg)"
+});
+
+const night2Bg=document.getElementById("night2-bg");
+night2Bg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/night2.jpg)"
+});
+
+const sheepBg=document.getElementById("sheep-bg");
+sheepBg.addEventListener("click",function(){
+ desktop.style.backgroundImage="url(assets/background/sheep.jpg)"
+});

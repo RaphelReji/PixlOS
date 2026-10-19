@@ -59,6 +59,9 @@ body{
     height: 100vh;
     position: relative;
     background: #080b14;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .dock {
     position: fixed;
