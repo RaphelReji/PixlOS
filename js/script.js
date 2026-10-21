@@ -185,3 +185,21 @@ const closeFiles=document.getElementById("close-files");
 closeFiles.addEventListener("click",function(){
     filesWindow.style.display="none";
 });
+
+
+
+const openStore=document.getElementById("open-store");
+openStore.addEventListener("click",  function(){
+    if (storeWindow.style.display==="block"){
+        storeWindow.style.display="none";
+    }
+
+    else{
+        storeWindow.style.display="block";
+    }
+}
+);
+const closeStore=document.getElementById("close-store");
+closeStore.addEventListener("click",function(){
+    storeWindow.style.display="none";
+});

@@ -389,9 +389,9 @@
           <div class="window-bar">
             <span>Store</span>
 
-            <button id="minimize-start" class="minimize-btn">-</button>
+            <button id="minimize-store" class="minimize-btn">-</button>
 
-            <button id="close-files" class="close-btn">x</button>
+            <button id="close-store" class="close-btn">x</button>
           </div>
 
         <div class="window-content">
@@ -417,7 +417,18 @@
 
 
 
-            <div><!--start of second grid of shop-->
+            <div id="shop-second-grid"><!--start of second grid of shop-->
+
+              <div id="store-home-window"><!--start of home app window-->
+              
+                <div id="store-home-window-header">
+                  <h1>PixlOS Store</h1>
+                  <input type="search" placeholder="  Search Apps" id="store-home-search">
+                </div>
+
+
+
+              </div><!--start of home app window-->
 
 
             </div><!--end of second grid of shop-->
@@ -460,6 +471,9 @@
     <img class="dock-app" id="open-browser" title="browser" src="assets/icons/browser.png">
 
     <img class="dock-app" id="open-files" title="files" src="assets/icons/files.png">
+
+    
+    <img class="dock-app" id="open-store" title="store" src="assets/icons/browser.png">
 
 
       </div>
