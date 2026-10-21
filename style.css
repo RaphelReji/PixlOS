@@ -402,6 +402,46 @@ min-height: fit-content;
 .wallpaper-img:hover{
   transform: scale(1.03);
 }
+
+#fonts-box{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+}
+.font-btn{
+  width: 130px;
+  text-align: center;
+  background-color: var(--button-active);
+  border-radius: 10px;
+  border: 1px solid var(--window-border-dark);
+  padding: 10px 20px;
+  margin: 10px;
+  transition: 0.3s;
+}
+.font-btn:hover{
+  border-radius: 20px;
+  transform: scale(1.04) translateY(-5px);
+  font-weight: bold;
+}
+#change-font-h3{
+  text-align: center;
+  margin: 10px;
+}
+#arial-font-btn{
+  font-family: Arial, Helvetica, sans-serif;
+}
+#pixel-font-btn{
+  font-family: "Press Start 2P";
+}
+#cursive-font-btn{
+  font-family: cursive;
+}
+#courier-font-btn{
+  font-family: 'Courier New', Courier, monospace;
+}
+#segeo-font-btn{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 #files-topbar{
     display: flex;
    gap: 20px;
