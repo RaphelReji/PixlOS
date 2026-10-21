@@ -102,7 +102,7 @@ document.querySelector("#day-theme-btn").onclick=()=>{
     root.style.setProperty("--window-title","#a5aaa3")
     root.style.setProperty("--text-primary","black")
     root.style.setProperty("--taskbar-border","white")
-    root.style.setProperty("--window-border-dark","white")
+    root.style.setProperty("--window-border-dark","black")
 }
 
 document.querySelector("#night-theme-btn").onclick=()=>{
@@ -154,3 +154,34 @@ document.querySelector("#reset-btn").onclick=()=>{
     root.style.setProperty("--button-hover","#D6D6D6")
     root.style.setProperty("--text-light","#FFFFFF")
 }
+
+
+
+
+
+const arialfontBtn=document.getElementById("arial-font-btn");
+arialfontBtn.addEventListener("click",function(){
+    desktop.style.fontFamily="Arial, Helvetica, sans-serif";
+});
+
+const cursivefontBtn=document.getElementById("cursive-font-btn");
+cursivefontBtn.addEventListener("click",function(){
+    desktop.style.fontFamily="cursive";
+});
+
+const courierfontBtn=document.getElementById("courier-font-btn");
+courierfontBtn.addEventListener("click",function(){
+    desktop.style.fontFamily=" 'Courier New', Courier, monospace";
+});
+
+
+const segeofontBtn=document.getElementById("segeo-font-btn");
+segeofontBtn.addEventListener("click",function(){
+    desktop.style.fontFamily="  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif";
+});
+
+
+const pixelfontBtn=document.getElementById("pixel-font-btn");
+pixelfontBtn.addEventListener("click",function(){
+    desktop.style.fontFamily=" 'Press Start 2P' ";
+});
