@@ -293,6 +293,7 @@ min-height: fit-content;
 .accent-square{
   width: 50px;
   height: 50px;
+  border-radius: 50%;
   border: 2px solid var(--window-border-dark);
   margin: 20px auto;
   transition: 0.3s;
@@ -305,7 +306,7 @@ min-height: fit-content;
   align-items: center;
 }
 #wood-theme{
-  background-color: #f1d8a8;
+  background-color:burlywood;
 }
 #red-theme{
   background-color: rgb(247, 117, 117);
@@ -313,7 +314,24 @@ min-height: fit-content;
 #hacker-theme{
   background-color: rgb(66, 255, 8);
 }
-
+#purple-theme{
+  background-color: rgb(56, 2, 248);
+}
+#orange-theme{
+  background-color: orange;
+}
+#yellow-theme{
+  background-color: yellow;
+}
+#cyan-theme{
+  background-color: cyan;
+}
+#indigo-theme{
+  background-color: indigo;
+}
+#black-theme{
+  background-color: black;
+}
 #reset-btn{
   background-color: var(--button-active);
   width: min-content;
