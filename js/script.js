@@ -38,6 +38,7 @@ const notesWindow=document.getElementById("notes-window");
 const settingsWindow=document.getElementById("settings-window");
 const browserWindow=document.getElementById("browser-window");
 const filesWindow=document.getElementById("files-window");
+const storeWindow=document.getElementById("store-window");
 
 let highestZIndex = 100;
 
@@ -108,6 +109,10 @@ makeDraggable(
 makeDraggable(
     filesWindow,
     filesWindow.querySelector(".window-bar")
+);
+makeDraggable(
+    storeWindow,
+    storeWindow.querySelector(".window-bar")
 );
 
 const closeStart=document.getElementById("close-start");
