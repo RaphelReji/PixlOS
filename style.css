@@ -168,6 +168,9 @@ body{
   padding: 20px;
   font-weight: 500;
 }
+#browser-window-content{
+  background-image: url(assets/background/browserbg.jpg);
+}
 
 .minimize-btn{
   width:30px;
@@ -325,8 +328,11 @@ min-height: fit-content;
 }
 #search-form{
   width: fit-content;
-  background-color: var(--button-active);
-    margin: 10px auto;
+  background-color:transparent;
+    backdrop-filter: blur(20px);
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+    margin: 40px auto;
 }
 #search{
   width: 200px;
@@ -339,8 +345,9 @@ min-height: fit-content;
   background-color: transparent;
 }
 #browser-time{
+  color: var(--text-light);
   text-align: center;
-  font-size: 30px;
+  font-size:50px;
   font-weight: bold;
   margin-top: 10px;
 }
@@ -355,10 +362,12 @@ min-height: fit-content;
   border: 1px solid var(--pixel-black);
   padding: 10px;
   border-radius: 10px;
+  margin: 30px auto;
+  color: var(--text-light);
   transition: 0.3s;
 }
 .browser-box:hover{
-  background-color: var(--bg-tertiary);
+  background-color: var(--text-disabled);
   transform: scale(1.04) translateY(-5px);
 }
 #browser-box-container{
