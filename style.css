@@ -619,3 +619,41 @@ a{
    border: 1px solid var(--pixel-black);
    border-radius: 10px;
 }
+
+.featured-app-card{
+  background-color: grey;
+  width: 180px;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+.featured-app-card:hover{
+  transform: scale(1.04) translateY(-1px);
+}
+.featured-app-card-img{
+margin: 10px 60px;
+}
+.featured-app-card-h1{
+  text-align: center;
+  font-size: 20px;
+}
+.featured-app-card-p{
+  text-align: center;
+}
+.featured-app-rate-grid{
+  display: flex;
+  align-items: center;
+  margin: auto;
+  justify-content: space-between;
+}
+.featured-app-card-btn{
+  text-align: center;
+  margin-top: 10px;
+  background-color: var(--button-active);
+  width: max-content;
+  margin: 10px auto;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
