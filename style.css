@@ -572,22 +572,25 @@ a{
   font-size: 20px;
   margin-top: 30px;
   color:var(--text-light);
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  background-color: var(--bg-secondary);
   border: 1px solid var(--window-border-dark);
-  border-radius: 10px;
   transition: 0.3s;
 }
 .shop-first-grid-btns:hover{
   transform: translateY(-2px);
-  background-color: var(--taskbar-bg);
+  background-color: var(--button-active);
 }
 #shop-first-grid{
-  background-color: var(--text-disabled);
+  background-color: var(--bg-tertiary);
   padding: 10px;
   border-radius: 10px;
   border: 2px solid var(--window-border-dark);
 }
 #shop-second-grid{
-  background-color: var(--text-disabled);
+  background-color: var(--bg-tertiary);
   padding: 10px;
   border-radius: 10px;
   margin-left: 10px;
@@ -599,7 +602,7 @@ a{
   height: 80px;
   align-items: center;
   display: flex;
-  background: #01013ab6;
+  background: #020749;
   padding: 10px;
   border-radius: 10px;
   color: var(--text-light);
