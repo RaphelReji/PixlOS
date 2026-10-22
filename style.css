@@ -621,7 +621,9 @@ a{
 }
 
 .featured-app-card{
-  background-color: grey;
+  background-color:var(--bg-secondary);
+   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--pixel-black);
   width: 180px;
   height: 200px;
   align-items: center;
@@ -633,7 +635,11 @@ a{
   transform: scale(1.04) translateY(-1px);
 }
 .featured-app-card-img{
-margin: 10px 60px;
+  margin: 10px 60px;
+  transition: 0.3s;
+}
+.featured-app-card-img:hover{
+  transform: rotate(360deg);
 }
 .featured-app-card-h1{
   text-align: center;
@@ -648,12 +654,33 @@ margin: 10px 60px;
   margin: auto;
   justify-content: space-between;
 }
+.featured-app-card-rate{
+  font-weight: 600;
+ margin:0 10px;
+}
+.featured-app-card-paid{
+    font-weight: 600;
+    margin:0 10px;
+}
 .featured-app-card-btn{
   text-align: center;
   margin-top: 10px;
   background-color: var(--button-active);
+  border: 1px solid var(--window-border-dark);
   width: max-content;
   margin: 10px auto;
   padding: 5px 10px;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.featured-app-card-btn:hover{
+transform: scale(1.03);
+border-radius: 15px;
+padding: 5px 20px;
+}
+#featured-apps-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 20px;
+  margin-top: 20px;
 }
