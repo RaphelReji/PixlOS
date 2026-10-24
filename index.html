@@ -772,7 +772,7 @@
                    <!--start of files-->
         <div id="stone-window" class="window">
           <div class="window-bar">
-            <span>Stone scicssors paper</span>
+            <span>Rock, paper, Scissors  paper</span>
 
             <button id="minimize-start" class="minimize-btn">-</button>
 
@@ -781,10 +781,11 @@
 
         <div class="window-content">
 
-          <div class="human-pick-btn">✌</div>
-          <div class="human-pick-btn">🖐</div>
-          <div class="human-pick-btn">✊</div>
+          <div class="human-pick-btn" onclick="playGame('rock')">✌</div>
+          <div class="human-pick-btn" onclick="playGame('paper')">🖐</div>
+          <div class="human-pick-btn" onclick="playGame('scissors')">✊</div>
             
+          <p id="result"></p>
 
  
   
@@ -824,8 +825,11 @@
 
     </main>
     
-    <script src="js/settings.js"></script>
+    
+    
     <script src="js/script.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/game.js"></script>
     
   </body>
 </html>
