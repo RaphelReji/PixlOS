@@ -360,6 +360,21 @@ min-height: fit-content;
   padding: 5px 10px;
   transform: scale(1.03);
 }
+
+#look-update-btn{
+  margin: 0 auto;
+  display:flex;
+  background-color: var(--button-bg);
+}
+#look-update-btn:hover{
+  padding: 5px 10px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.212);
+}
+#update-output{
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-disabled);
+}
 #search-form{
   width: fit-content;
   background-color:transparent;
@@ -545,7 +560,8 @@ min-height: fit-content;
   display: grid;
   grid-template-columns: 1fr 1fr;
   row-gap: 10px;
-  margin:30px 60px;
+  margin: 30px auto;
+text-align: center;
   
 }
 #about-p{

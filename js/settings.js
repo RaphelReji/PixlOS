@@ -248,3 +248,44 @@ const pixelfontBtn=document.getElementById("pixel-font-btn");
 pixelfontBtn.addEventListener("click",function(){
     desktop.style.fontFamily=" 'Press Start 2P' ";
 });
+
+
+const lookupdateBtn=document.getElementById("look-update-btn");
+const lookupdateOutput=document.getElementById("update-output");
+lookupdateBtn.addEventListener("click",function(){
+    setTimeout(() => {
+        lookupdateBtn.style.display="none";
+        lookupdateOutput.style.display="block";
+    }, 1000);
+        setTimeout(() => {
+        lookupdateOutput.textContent="Looking";
+    }, 1300);
+          setTimeout(() => {
+        lookupdateOutput.textContent="Looking for ";
+    }, 1400);
+          setTimeout(() => {
+        lookupdateOutput.textContent="Looking for update....";
+    }, 1500);
+            setTimeout(() => {
+        lookupdateOutput.textContent="Looking";
+    }, 1700);
+          setTimeout(() => {
+        lookupdateOutput.textContent="Looking for ";
+    }, 1800);
+          setTimeout(() => {
+        lookupdateOutput.textContent="Looking for update.....";
+    }, 1900);
+
+    setTimeout(() => {
+        lookupdateOutput.textContent="No Updates Until Now!";
+    }, 2300);
+
+    setTimeout(() => {
+        lookupdateOutput.style.display="none";
+    }, 3500);
+
+    setTimeout(() => {
+        lookupdateBtn.style.display="flex";
+    }, 4000);
+
+})
