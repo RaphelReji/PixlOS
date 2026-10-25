@@ -3,7 +3,7 @@ const output=document.getElementById("output");
 
 commandInput.addEventListener("keydown",function(event){
   if(event.key==="Enter"){
-    const command=commandInput.ariaValueMax.trim().toLowerCase();
+    const command=commandInput.value.trim().toLowerCase();
 
     const line = document.createElement("p");
     line.textContent= "C:\\PIXLOS> " + command;

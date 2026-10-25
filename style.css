@@ -789,9 +789,6 @@ padding: 5px 20px;
   margin-top: 20px;
 }
 
-#terminal-window{
-  display: block;
-}
 #game-flexbox{
   display: flex;
   flex-wrap: wrap;
@@ -855,7 +852,7 @@ padding: 5px 20px;
 .input-line{
   display: flex;
   gap: 8px;
-  align-items: center;
+  align-items:center;
 }
 input {
   background: transparent;
@@ -870,6 +867,7 @@ input {
 }
 
 #output p {
+  color: white;
   white-space: pre-wrap;
   overflow-wrap: anywhere;
 }
