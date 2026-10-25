@@ -789,7 +789,7 @@ padding: 5px 20px;
   margin-top: 20px;
 }
 
-#game-window{
+#terminal-window{
   display: block;
 }
 #game-flexbox{
@@ -830,4 +830,46 @@ padding: 5px 20px;
   border-radius: 10px;
   padding: 5px 10px;
   font-size: 20px;
+}
+#terminal-window-content{
+  background-color: var(--pixel-black);
+  color: var(--text-light);
+}
+.titlebar-terminal{
+  color: var(--pixel-black);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titlebar-terminal button{
+  background: var(--button-active);
+  cursor: pointer;
+}
+
+.screen{
+  min-height: 350px;
+  padding: 15px;
+}
+.input-line{
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+input {
+  background: transparent;
+  color: #e2e7e4;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-size: 16px;
+  flex: 1;
+  min-width: 0;
+  caret-color: #dce2df;
+}
+
+#output p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }

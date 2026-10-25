@@ -729,17 +729,22 @@
     <button id="close-terminal" class="close-btn">x</button>
   </div>
 
-  <div class="window-content">
+  <div class="window-content" id="terminal-window-content">
   
-    <div class="title-bar">
-      <span>Terminal</span>
-      <button onclick="clearTerminal()">_</button>
+    <div class="titlebar-terminal">
+      <button onclick="clearTerminal()">End Terminal</button>
     </div>
 
     <div id="screen" class="screen">
       <p>PixlOS Terminal..</p>
       <p>Type 'help' to see commands.</p>
       <p>------------------------------</p>
+    </div>
+    <div id="output"></div>
+
+    <div class="input-line">
+      <span>C:\PIXLOS&gt;</span>
+      <input id="command" autofocus autocomplete="off">
     </div>
 
 
@@ -799,6 +804,7 @@
     <script src="js/script.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/game.js"></script>
+    <script src="js/terminal.js"></script>
     
   </body>
 </html>
