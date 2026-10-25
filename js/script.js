@@ -39,6 +39,7 @@ const settingsWindow=document.getElementById("settings-window");
 const browserWindow=document.getElementById("browser-window");
 const filesWindow=document.getElementById("files-window");
 const storeWindow=document.getElementById("store-window");
+const gameWindow=document.getElementById("game-window");
 
 let highestZIndex = 100;
 
@@ -113,6 +114,10 @@ makeDraggable(
 makeDraggable(
     storeWindow,
     storeWindow.querySelector(".window-bar")
+);
+makeDraggable(
+    gameWindow,
+    gameWindow.querySelector(".window-bar")
 );
 
 const closeStart=document.getElementById("close-start");
@@ -202,4 +207,22 @@ openStore.addEventListener("click",  function(){
 const closeStore=document.getElementById("close-store");
 closeStore.addEventListener("click",function(){
     storeWindow.style.display="none";
+});
+
+
+
+const openGame=document.getElementById("open-game");
+openGame.addEventListener("click",  function(){
+    if (gameWindow.style.display==="block"){
+        gameWindow.style.display="none";
+    }
+
+    else{
+        gameWindow.style.display="block";
+    }
+}
+);
+const closeGame=document.getElementById("close-game");
+closeGame.addEventListener("click",function(){
+    gameWindow.style.display="none";
 });

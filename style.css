@@ -773,10 +773,19 @@ padding: 5px 20px;
   margin-top: 20px;
 }
 
-#stone-window{
+#game-window{
   display: block;
 }
+#game-flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 20px;
+}
 .human-pick-btn{
+  display: flex;
   text-align: center;
   justify-content: center;
   vertical-align: middle;
@@ -794,4 +803,15 @@ padding: 5px 20px;
 
 .human-pick-btn:hover{
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.747);
+}
+
+#result{
+  text-align: center;
+  width: max-content;
+  margin: 20px auto;
+  background-color: var(--button-bg);
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-size: 20px;
 }

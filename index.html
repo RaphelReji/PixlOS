@@ -152,8 +152,6 @@
         <!--end of browser-->
 
 
-
-
            <!--start of settings-->
         <div id="settings-window" class="window">
           <div class="window-bar">
@@ -301,9 +299,6 @@
         <!--end of settings-->
 
 
-
-
-
            <!--start of files-->
         <div id="files-window" class="window">
           <div class="window-bar">
@@ -397,15 +392,6 @@
 
         </div>
         <!--end of files-->
-
-
-
-
-
-
-
-
-
 
 
 
@@ -770,21 +756,24 @@
 
 
                    <!--start of files-->
-        <div id="stone-window" class="window">
+        <div id="game-window" class="window">
           <div class="window-bar">
-            <span>Rock, paper, Scissors  paper</span>
+            <span>Rock Scissors paper Game</span>
 
             <button id="minimize-start" class="minimize-btn">-</button>
 
-            <button id="close-files" class="close-btn">x</button>
+            <button id="close-game" class="close-btn">x</button>
           </div>
 
         <div class="window-content">
-
-          <div class="human-pick-btn" onclick="playGame('scissors')">✌</div>
+           
+          <div id="game-flexbox">
+             <div class="human-pick-btn" onclick="playGame('scissors')">✌</div>
           <div class="human-pick-btn" onclick="playGame('paper')">🖐</div>
           <div class="human-pick-btn" onclick="playGame('rock')">✊</div>
             
+          </div>
+         
           <p id="result"></p>
 
  
@@ -809,15 +798,29 @@
     <img class="dock-app" id="open-settings" title="settings" src="assets/icons/settings.png">
 
     
-    <img class="dock-app" id="open-recyclebin" title="Recycle-bin" src="assets/icons/recycle_bin.png">
+    <img class="dock-app" id="open-recyclebin" title="Recycle-bin" src="assets/icons/trash.png">
 
 
     <img class="dock-app" id="open-browser" title="browser" src="assets/icons/browser.png">
 
-    <img class="dock-app" id="open-files" title="files" src="assets/icons/files.png">
+    <img class="dock-app" id="open-files" title="files" src="assets/icons/file.png">
 
     
-    <img class="dock-app" id="open-store" title="store" src="assets/icons/browser.png">
+    <img class="dock-app" id="open-store" title="store" src="assets/icons/store.png">
+
+    <img class="dock-app" id="open-game" title="store" src="assets/icons/browser.png">
+
+    <img class="dock-app" id="open-store" title="store" src="assets/icons/terminal.png">
+
+    <img class="dock-app" id="open-game" title="store" src="assets/icons/piano.png">
+
+    <img class="dock-app" id="open-store" title="store" src="assets/icons/music.png">
+
+    <img class="dock-app" id="open-game" title="store" src="assets/icons/image_editor.png">
+
+
+   <img class="dock-app" id="open-store" title="store" src="assets/icons/bot.png">
+
 
 
       </div>
