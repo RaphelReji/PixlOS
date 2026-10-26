@@ -899,3 +899,7 @@ input {
   font-size: 16px;
   flex: 1;
 }
+
+#bot-window{
+  display: block;
+}
