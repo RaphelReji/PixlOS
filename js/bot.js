@@ -14,7 +14,7 @@ botcommandInput.addEventListener("keydown",function(event){
     }else if(command==="ideas"){
       botOutput.textContent += "Try making a game or website! and for more Commands : game, website";
     }else if (command==="clear"){
-      botOutput.textContent += "PixlBot chat cleared";
+      botOutput.innerHTML= "";
     }else if(command===""){
 
     }else{

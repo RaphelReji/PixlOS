@@ -41,6 +41,7 @@ const filesWindow=document.getElementById("files-window");
 const storeWindow=document.getElementById("store-window");
 const gameWindow=document.getElementById("game-window");
 const terminalWindow=document.getElementById("terminal-window");
+const botWindow = document.getElementById("bot-window");
 
 let highestZIndex = 100;
 
@@ -123,6 +124,10 @@ makeDraggable(
 makeDraggable(
     terminalWindow,
     terminalWindow.querySelector(".window-bar")
+);
+makeDraggable(
+    botWindow,
+    botWindow.querySelector(".window-bar")
 );
 
 const closeStart=document.getElementById("close-start");
@@ -249,4 +254,23 @@ openTerminal.addEventListener("click",  function(){
 const closeTerminal=document.getElementById("close-terminal");
 closeTerminal.addEventListener("click",function(){
     terminalWindow.style.display="none";
+});
+
+
+
+
+const openBot=document.getElementById("open-bot");
+openBot.addEventListener("click",  function(){
+    if (botWindow.style.display==="block"){
+        botWindow.style.display="none";
+    }
+
+    else{
+        botWindow.style.display="block";
+    }
+}
+);
+const closeBot=document.getElementById("close-bot");
+closeBot.addEventListener("click",function(){
+    botWindow.style.display="none";
 });
