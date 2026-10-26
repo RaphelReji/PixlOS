@@ -246,7 +246,7 @@ segeofontBtn.addEventListener("click",function(){
 
 const pixelfontBtn=document.getElementById("pixel-font-btn");
 pixelfontBtn.addEventListener("click",function(){
-    desktop.style.fontFamily=" 'Press Start 2P' ";
+    desktop.style.fontFamily="var(--font-main)";
 });
 
 
