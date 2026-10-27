@@ -929,10 +929,69 @@ input {
   transition: 0.3s;
 }
 
-#create-img-text{
+#create-img1-text{
   text-align: center;
   position: relative;
   font-size: 20px;
   top:150px;
+}
 
+#create-img2-container{
+  width: 550px;
+  height: 400px;
+  background-color: rgba(96, 97, 99, 0.267);
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+}
+#create-img2{
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display:none ;
+  filter: blur(5px);
+  transition: 0.3s;
+}
+
+#create-img2-text{
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  top:150px;
+}
+
+
+#create-img3-container{
+  width: 550px;
+  height: 400px;
+  background-color: rgba(96, 97, 99, 0.267);
+  margin: 40px auto;
+  align-items: center;
+  justify-content: center;
+  display: none;
+
+}
+#create-img3{
+  width: 550px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  display:none ;
+  filter: blur(5px);
+  transition: 0.3s;
+}
+
+#create-img3-text{
+  text-align: center;
+  position: relative;
+  font-size: 20px;
+  top:150px;
+}
+
+#image-gen-goback{
+  background-color: var(--button-active);
+  margin: 10px;
 }
