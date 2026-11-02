@@ -794,9 +794,9 @@
         <h3>Select what do you want to create?</h3>
 
         <div>
-          <button id="img-gen-pixelart-btn">Pixel art</button>
-          <button id="img-gen-funny-btn">Something funny</button>
-          <button id="img-gen-cool-btn">Something cool!</button>
+          <button id="img-gen-pixelart-btn" class="img-gen-btns">Pixel art</button>
+          <button id="img-gen-funny-btn" class="img-gen-btns">Something funny</button>
+          <button id="img-gen-cool-btn" class="img-gen-btns">Something cool!</button>
         </div>
 
          <div id="create-img1-container">
@@ -821,6 +821,51 @@
 
 </div>
 <!--end of bot-->
+
+
+
+<div id="music-window" class="window">
+  <div class="window-bar">
+  <span>Music Player</span>
+  <img src="assets/icons/fullscreen.png" id="fullscreen-music" class="full-btn">
+  <img src="assets/icons/close.png" id="close-music" class="close-btn">
+  </div>
+
+    <div class="window-content" id="music-content">
+
+    <div id="main-music">
+
+      <div class="now-playing">
+
+        <audio id="audio"></audio>
+
+        <img id="album-art" class="album-art" src="assets/cover/default-cover.png" alt="album cover">
+
+        <h2 id="song-title">No Song Playing</h2>
+        <p id="artist-name">Select a song</p>
+        </div>
+
+        <div class="music-controls">
+
+        <button id="previous">⏮</button>
+
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+
+        </div>
+      </div>
+
+    <div class="music-library">
+
+    <h3 id="music-h3">PLAYLIST</h3>
+    <div id="song-list"></div>
+
+    </div>
+
+
+    </div>
+
+</div>
 
 
 
@@ -866,7 +911,8 @@
 
 
     </main>
-    
+
+    <script src="js/musicplayer.js"></script>
     <script src="js/bot.js"></script>
     <script src="js/terminal.js"></script>
     <script src="js/script.js"></script>

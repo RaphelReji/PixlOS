@@ -995,3 +995,9 @@ input {
   background-color: var(--button-active);
   margin: 10px;
 }
+
+.img-gen-btns{
+  background-color: var(--button-bg);
+  padding: 2px 4px;
+  margin-top: 10px;
+}
