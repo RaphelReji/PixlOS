@@ -43,6 +43,7 @@ const gameWindow=document.getElementById("game-window");
 const terminalWindow=document.getElementById("terminal-window");
 const botWindow = document.getElementById("bot-window");
 const musicWindow = document.getElementById("music-window");
+const editorWindow  = document.getElementById("editor-window");
 
 let highestZIndex = 100;
 
@@ -133,6 +134,10 @@ makeDraggable(
 makeDraggable(
     musicWindow,
     musicWindow.querySelector(".window-bar")
+);
+makeDraggable(
+    editorWindow,
+    editorWindow.querySelector(".window-bar")
 );
 
 
@@ -297,4 +302,22 @@ openMusic.addEventListener("click",  function(){
 const closeMusic=document.getElementById("close-music");
 closeMusic.addEventListener("click",function(){
     musicWindow.style.display="none";
+});
+
+
+
+const openEditor=document.getElementById("open-editor");
+openEditor.addEventListener("click",  function(){
+    if (editorWindow.style.display==="block"){
+        editorWindow.style.display="none";
+    }
+
+    else{
+        editorWindow.style.display="block";
+    }
+}
+);
+const closeEditor=document.getElementById("close-editor");
+closeEditor.addEventListener("click",function(){
+    editorWindow.style.display="none";
 });
