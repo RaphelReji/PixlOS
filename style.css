@@ -1009,9 +1009,7 @@ input {
 #music-content{
   display: flex;
 }
-.music-library{
-  display: flex;
-}
+
 .album-art{
     position: relative;
     display: block;
@@ -1045,7 +1043,6 @@ input {
     border-radius: 50%;
     background: var(--bg-primary);
     cursor: pointer;
-    border: none;
 }
 .play-btn span{
     position: absolute;
@@ -1090,4 +1087,27 @@ input {
     100%{
         box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
     }
+}
+#previous{
+  background-color: var(--bg-primary);
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 12px;
+}
+
+#next{
+  background-color: var(--bg-primary);
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 12px;
+}
+#song-list{
+  width: 20%;
+ display: flex;
+ flex-direction: row;
+}
+
+#song-list img{
+  width: 50px;
+  height: 50px;
 }

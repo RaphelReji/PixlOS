@@ -8,19 +8,37 @@ const songs = [
   },
 
     {
-      title:"Go Neffex",
-      artist:"pixelman",
-      audio:"assets/audios/song1.mp3",
-      cover:"assets/cover/cover1.png"
-
+      title:"Phonk",
+      artist:"Dmirii",
+      audio:"assets/audios/song4.mp3",
+      cover:"assets/cover/cover5.jpg"
   },
 
     {
-      title:"Go Neffex",
-      artist:"pixelman",
-      audio:"assets/audios/song1.mp3",
-      cover:"assets/cover/cover1.png"
+      title:"Phonk",
+      artist:"Dmitrii",
+      audio:"assets/audios/song5.mp3",
+      cover:"assets/cover/cover6.jpg"
 
+  },
+   {
+      title:"Vibe",
+      artist:"prettyjohn1",
+      audio:"assets/audios/song6.mp3",
+      cover:"assets/cover/cover7.jpeg"
+
+  },
+   {
+      title:"Bubble",
+      artist:"Willi",
+      audio:"assets/audios/song2.wav",
+      cover:"assets/cover/cover3.jpg"
+  },
+    {
+      title:"JingleWave",
+      artist:"Willi",
+      audio:"assets/audios/song3.wav",
+      cover:"assets/cover/cover4.jpg"
   }
 ];
 
