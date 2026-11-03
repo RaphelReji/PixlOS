@@ -3,7 +3,23 @@ const songs = [
       title:"Go Neffex",
       artist:"pixelman",
       audio:"assets/audios/song1.mp3",
-      cover: "assets/cover/cover1.png"
+      cover:"assets/cover/cover1.png"
+
+  },
+
+    {
+      title:"Go Neffex",
+      artist:"pixelman",
+      audio:"assets/audios/song1.mp3",
+      cover:"assets/cover/cover1.png"
+
+  },
+
+    {
+      title:"Go Neffex",
+      artist:"pixelman",
+      audio:"assets/audios/song1.mp3",
+      cover:"assets/cover/cover1.png"
 
   }
 ];
@@ -24,7 +40,7 @@ function loadSong(index){
 
    document.getElementById("artist-name").textContent = song.artist;
 
-    document.getElementById("album-art").textContent = song.cover;
+    document.getElementById("album-art").src = song.cover;
 
 }
 

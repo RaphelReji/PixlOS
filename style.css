@@ -1005,3 +1005,36 @@ input {
 #music-window{
   display: block;
 }
+
+#music-content{
+  display: flex;
+}
+.music-library{
+  display: flex;
+}
+.album-art{
+    position: relative;
+    display: block;
+    margin: 40px auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-image: url(images/cover\ 1.jpeg);
+    background-size: cover;
+    box-shadow: 0 0 0 10px rgba(231, 230, 230, 0.08);
+    animation:rotate 20s linear infinite ;
+    animation-play-state: paused;
+}
+@keyframes rotate {
+
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+  
+}
+.album-art{
+    animation-play-state: running;
+} 
