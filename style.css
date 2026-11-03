@@ -1001,3 +1001,7 @@ input {
   padding: 2px 4px;
   margin-top: 10px;
 }
+
+#music-window{
+  display: block;
+}
