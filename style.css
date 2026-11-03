@@ -1019,7 +1019,6 @@ input {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background-image: url(images/cover\ 1.jpeg);
     background-size: cover;
     box-shadow: 0 0 0 10px rgba(231, 230, 230, 0.08);
     animation:rotate 20s linear infinite ;
@@ -1038,3 +1037,57 @@ input {
 .album-art{
     animation-play-state: running;
 } 
+
+.play-btn{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--bg-primary);
+    cursor: pointer;
+    border: none;
+}
+.play-btn span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 30px;
+    border-radius: 2px;
+    background: var(--bg-secondary);
+    transition: 0.5s;
+    clip-path: polygon(0 0,100% 0 100% 100%,0% 100%);
+}
+.play-btn span:nth-child(2){
+    left: 55%;
+    transform-origin: center;
+}
+
+.play-btn.pause span:nth-child(2){
+  transform: translateY(-50%) scaleY(0);
+}
+
+.play-btn.pause span:nth-child(1){
+  width: 35%;
+  left: 53%;
+  transform: translate(-50%,-50%);
+  border-radius: 0;
+  clip-path: polygon(0 0,100% 50%, 100% 50%,0% 100%);
+}
+
+.play-btn.pause{
+    animation: pulse 2s linear infinite;
+}
+
+@keyframes pulse {
+    0%{
+        box-shadow: 0;
+    }
+    50%{
+        box-shadow: 0 0  0 5px rgba(255, 255, 255, 0.1) ;
+    }
+    100%{
+        box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.4);
+    }
+}

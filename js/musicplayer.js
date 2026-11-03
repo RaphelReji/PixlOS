@@ -27,7 +27,7 @@ const songs = [
 
 const audio = document.getElementById("audio");
 
-const playButton = document.getElementById("play");
+const playButton = document.querySelector('.play-btn');
 
 let currentSong = 0;
 
@@ -49,7 +49,6 @@ function playSong(){
 
   audio.play();
 
-  playButton.textContent = "||";
 }
 
 function pauseSong(){
@@ -93,3 +92,15 @@ songs.forEach((song, index) => {
 
   songList.appendChild(item)
 })
+
+const disk = document.getElementById("album-art")
+playButton.addEventListener('click',()=>{
+    if(playButton.className.includes('pause')){
+        playSong();
+    }
+    else{
+        pauseSong();
+    }
+    playButton.classList.toggle('pause')
+    disk.classList.toggle('play');
+});
