@@ -1127,3 +1127,11 @@ input {
   transform: scale(1.04) translateY(-10px);
   border-radius: 20px;
 }
+
+#editing-window{
+  display: none;
+}
+
+.editing-window-all button{
+  background-color: var(--button-bg);
+}
