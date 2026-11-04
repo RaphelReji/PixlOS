@@ -71,9 +71,32 @@ function playSong(){
 
 function pauseSong(){
   audio.pause();
-
-  playButton.textContent = "|>"
 }
+
+function nextSong(){
+  currentSong++;
+
+  if(currentSong >= songs.length){
+    currentSong = 0;
+  }
+
+  loadSong(currentSong)
+  playSong();
+}
+
+function previousSong(){
+  currentSong--;
+
+  if(currentSong <= 0){
+    currentSong = songs.length - 1;
+  }
+
+  loadSong(currentSong)
+  playSong();
+}
+
+document.getElementById("next").addEventListener("click", nextSong);
+document.getElementById("previous").addEventListener("click", previousSong);
 
 
 playButton.addEventListener("click", () => {
@@ -97,7 +120,7 @@ songs.forEach((song, index) => {
   <img src="${song.cover}" class="covers">
   <div>
   <strong>${song.title}</strong>
-  <small>${song.title}</small>
+  <small>${song.artist}</small>
   </div>
   `;
 
@@ -112,13 +135,13 @@ songs.forEach((song, index) => {
 })
 
 const disk = document.getElementById("album-art")
-playButton.addEventListener('click',()=>{
-    if(playButton.className.includes('pause')){
-        playSong();
-    }
-    else{
-        pauseSong();
-    }
-    playButton.classList.toggle('pause')
-    disk.classList.toggle('play');
+
+audio.addEventListener("play", () =>{
+  playButton.classList.remove("pause");
+  disk.classList.add("play");
 });
+
+audio.addEventListener("pause", () =>{
+  playButton.classList.add("pause");
+  disk.classList.remove("play");
+})
