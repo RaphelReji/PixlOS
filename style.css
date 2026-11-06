@@ -1178,3 +1178,19 @@ input {
 .editing-window-all button{
   background-color: var(--button-bg);
 }
+
+#editing-window-img5{
+  display: none;
+}
+#editing-window-img4{
+  display: none;
+}
+#editing-window-img3{
+  display: none;
+}
+#editing-window-img2{
+  display: none;
+}
+#editing-window-img1{
+  display: none;
+}
