@@ -14,3 +14,9 @@ img1backBtn.addEventListener("click", function(){
 editingWindow.style.display = "none";
 mainEditor.style.display = "block";
 });
+
+const img1= document.getElementById("img-editing-img1");
+const img1contrastBtn = document.getElementById("img1-editing-contrast");
+img1contrastBtn.addEventListener("click", function(){
+  img1.style.filter = blur(2);
+});

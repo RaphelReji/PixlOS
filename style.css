@@ -1155,18 +1155,20 @@ input {
 #image-editor-imgs-box{
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 25px;
 }
 
 #image-editor-imgs-box img{
   width: 120px;
   height: 120px;
+  object-fit: cover;
   transition: 0.3s;
 }
 
 #image-editor-imgs-box img:hover{
   transform: scale(1.04) translateY(-10px);
   border-radius: 20px;
+  border: 2px dashed var(--accent-yellow);
 }
 
 #editing-window{

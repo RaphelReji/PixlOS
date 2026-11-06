@@ -24,8 +24,9 @@ botcommandInput.addEventListener("keydown",function(event){
     }else if (command==="game"){
       botOutput.textContent += "if you want a make game start with godot engine it's super lightWeight and has a huge library out there and start with brackeys tutorial it is a good one to start!";
     }else if (command==="website"){
-      botchatWindow.style.display="none";
-      botimageWindow.style.display="block";
+      botOutput.textContent += "want to make a website try some html css tutorials and if you want a basic structure type webdemo";
+    }else if (command==="webdemo"){
+      botOutput.textContent += "try this in Google A simple website to study html and css that's all  ";
     }else if(command===""){
 
     }else{
