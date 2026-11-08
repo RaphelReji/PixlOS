@@ -113,6 +113,9 @@ editingWindow.addEventListener("click", function(event){
 
   const filter = button.dataset.filter;
 
+  const filterText = editingSection.querySelector(".active-filter");
+  filterText.textContent = "Current filter: " + button.textContent;
+
   if(filter ==="contrast"){
     image.style.filter = "contrast(150%)"
   }
