@@ -99,36 +99,37 @@ editingWindow.style.display = "none";
 mainEditor.style.display = "block";
 });
 
-const img1 = document.getElementById("img-editing-img1");
+editingWindow.addEventListener("click", function(event){
 
-const contrastBtn = document.getElementById("img1-editing-contrast");
+  const button = event.target.closest(".filter-btn");
 
-contrastBtn.addEventListener("click", function(){
-  img1.style.filter = "contrast(150%)";
-})
+  if(!button){
+    return;
+  }
 
-const resetImg1 = document.getElementById("img1-reset");
+   const editingSection = button.closest(".editing-window-all");
 
-resetImg1.addEventListener("click", function(){
+  const image = editingSection.querySelector("img");
 
-  img1.style.filter = "none";
+  const filter = button.dataset.filter;
 
-});
+  if(filter ==="contrast"){
+    image.style.filter = "contrast(150%)"
+  }
 
+  else if(filter ==="blur"){
+    image.style.filter = "blur(3px)"
+  }
 
-const blurBtn = document.getElementById("img1-blur");
-blurBtn.addEventListener("click", function(){
-  img1.style.filter = "blur(3px)";
-});
+  else if(filter ==="brightness"){
+    image.style.filter = "brightness(130%)"
+  }
 
-const lightingBtn = document.getElementById("img1-lighting");
+  else if(filter ==="grayscale"){
+    image.style.filter = "grayscale(100%)"
+  }
 
-lightingBtn.addEventListener("click", function(){
-  img1.style.filter = "brightness(130%)";
-});
-
-const greyscaleBtn = document.getElementById("img1-greyscale");
-
-greyscaleBtn.addEventListener("click", function(){
-  img1.style.filter = "grayscale(100%)";
+   else if(filter ==="none"){
+    image.style.filter = "none"
+  }
 });
