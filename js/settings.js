@@ -244,12 +244,6 @@ segeofontBtn.addEventListener("click",function(){
 });
 
 
-const pixelfontBtn=document.getElementById("pixel-font-btn");
-pixelfontBtn.addEventListener("click",function(){
-    desktop.style.fontFamily="var(--font-main)";
-});
-
-
 const lookupdateBtn=document.getElementById("look-update-btn");
 const lookupdateOutput=document.getElementById("update-output");
 lookupdateBtn.addEventListener("click",function(){
