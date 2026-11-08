@@ -8,10 +8,21 @@ const editingWindowimg4 = document.getElementById('editing-window-img4');
 const editingWindowimg5 = document.getElementById('editing-window-img5');
 
 
+function hideAllImages(){
+  editingWindowimg1.style.display = "none";
+  editingWindowimg2.style.display = "none";
+  editingWindowimg3.style.display = "none";
+  editingWindowimg4.style.display = "none";
+  editingWindowimg5.style.display = "none";
+}
+
 const editImg1 = document.getElementById("img-editor-img1");
 editImg1.addEventListener("click",function(){
   mainEditor.style.display = "none";
   editingWindow.style.display = "block";
+
+  hideAllImages();
+
   editingWindowimg1.style.display = "block";
 
 });
@@ -28,6 +39,7 @@ const editImg2 = document.getElementById("img-editor-img2");
 editImg2.addEventListener("click",function(){
   mainEditor.style.display = "none";
   editingWindow.style.display = "block";
+  hideAllImages();
   editingWindowimg2.style.display = "block";
 
 });
@@ -43,6 +55,7 @@ const editImg3 = document.getElementById("img-editor-img3");
 editImg3.addEventListener("click",function(){
   mainEditor.style.display = "none";
   editingWindow.style.display = "block";
+  hideAllImages();
   editingWindowimg3.style.display = "block";
 
 });
@@ -58,6 +71,8 @@ const editImg4 = document.getElementById("img-editor-img4");
 editImg4.addEventListener("click",function(){
   mainEditor.style.display = "none";
   editingWindow.style.display = "block";
+  hideAllImages();
+
   editingWindowimg4.style.display = "block";
 
 });
@@ -73,6 +88,7 @@ const editImg5 = document.getElementById("img-editor-img5");
 editImg5.addEventListener("click",function(){
   mainEditor.style.display = "none";
   editingWindow.style.display = "block";
+  hideAllImages();
   editingWindowimg5.style.display = "block";
 
 });
@@ -82,3 +98,11 @@ img5backBtn.addEventListener("click", function(){
 editingWindow.style.display = "none";
 mainEditor.style.display = "block";
 });
+
+const img1 = document.getElementById("img-editing-img1");
+
+const contrastBtn = document.getElementById("img1-editing-contrast");
+
+contrastBtn.addEventListener("click", function(){
+  img1.style.filter = "contrast(150%)";
+})
