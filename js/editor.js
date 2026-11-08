@@ -106,3 +106,29 @@ const contrastBtn = document.getElementById("img1-editing-contrast");
 contrastBtn.addEventListener("click", function(){
   img1.style.filter = "contrast(150%)";
 })
+
+const resetImg1 = document.getElementById("img1-reset");
+
+resetImg1.addEventListener("click", function(){
+
+  img1.style.filter = "none";
+
+});
+
+
+const blurBtn = document.getElementById("img1-blur");
+blurBtn.addEventListener("click", function(){
+  img1.style.filter = "blur(3px)";
+});
+
+const lightingBtn = document.getElementById("img1-lighting");
+
+lightingBtn.addEventListener("click", function(){
+  img1.style.filter = "brightness(130%)";
+});
+
+const greyscaleBtn = document.getElementById("img1-greyscale");
+
+greyscaleBtn.addEventListener("click", function(){
+  img1.style.filter = "grayscale(100%)";
+});
