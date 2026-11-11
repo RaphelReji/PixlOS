@@ -1,7 +1,9 @@
+
 const shopButtons = document.querySelectorAll(".shop-first-grid-btns");
 
 const homeWindow = document.getElementById("store-home-window");
 const appsWindow = document.getElementById("store-apps-window");
+
 
 shopButtons.forEach(function(button){
   button.addEventListener("click", function(){
