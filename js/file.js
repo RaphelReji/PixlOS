@@ -33,3 +33,87 @@ if(thispcBtn){
     selectedfileText.textContent = "This Pc"
   })
 }
+
+if(documentBtn){
+  documentBtn.addEventListener("click", function(){
+    thispcWindow.style.display = "none";
+    documentsWindow.style.display = "flex";
+    picturesWindow.style.display = "none";
+    musicfileWindow.style.display = "none";
+    videofileWindow.style.display = "none";
+    downloadsWindow.style.display = "none";
+    devicesWindow.style.display = "none";
+
+    selectedfileText.textContent = "Documents"
+  })
+}
+
+if(picturesBtn){
+  picturesBtn.addEventListener("click", function(){
+    thispcWindow.style.display = "none";
+    documentsWindow.style.display = "none";
+    picturesWindow.style.display = "flex";
+    musicfileWindow.style.display = "none";
+    videofileWindow.style.display = "none";
+    downloadsWindow.style.display = "none";
+    devicesWindow.style.display = "none";
+
+    selectedfileText.textContent = "Pictures"
+  })
+}
+
+if(musicBtn){
+  musicBtn.addEventListener("click", function(){
+    thispcWindow.style.display = "none";
+    documentsWindow.style.display = "none";
+    picturesWindow.style.display = "none";
+    musicfileWindow.style.display = "flex";
+    videofileWindow.style.display = "none";
+    downloadsWindow.style.display = "none";
+    devicesWindow.style.display = "none";
+
+    selectedfileText.textContent = "Musics"
+  })
+}
+
+if(videosBtn){
+  videosBtn.addEventListener("click", function(){
+    thispcWindow.style.display = "none";
+    documentsWindow.style.display = "none";
+    picturesWindow.style.display = "none";
+    musicfileWindow.style.display = "none";
+    videofileWindow.style.display = "flex";
+    downloadsWindow.style.display = "none";
+    devicesWindow.style.display = "none";
+
+    selectedfileText.textContent = "Videos"
+  })
+}
+
+if(downloadsBtn){
+  downloadsBtn.addEventListener("click", function(){
+    thispcWindow.style.display = "none";
+    documentsWindow.style.display = "none";
+    picturesWindow.style.display = "none";
+    musicfileWindow.style.display = "none";
+    videofileWindow.style.display = "none";
+    downloadsWindow.style.display = "flex";
+    devicesWindow.style.display = "none";
+
+    selectedfileText.textContent = "Downloads"
+  })
+}
+
+if(devicesBtn){
+  devicesBtn.addEventListener("click", function(){
+    thispcWindow.style.display = "none";
+    documentsWindow.style.display = "none";
+    picturesWindow.style.display = "none";
+    musicfileWindow.style.display = "none";
+    videofileWindow.style.display = "none";
+    downloadsWindow.style.display = "none";
+    devicesWindow.style.display = "flex";
+
+    selectedfileText.textContent = "Devices"
+  })
+}
