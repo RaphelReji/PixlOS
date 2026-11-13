@@ -23,7 +23,7 @@ shopButtons.forEach(function(button){
     }
 
     else if (page === "apps"){
-      appsWindow.style.display = "block"
+      appsWindow.style.display = "block";
     }
   });
 });

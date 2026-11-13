@@ -997,7 +997,7 @@ input {
 }
 
 #editor-window{
-  display: block;
+  display: none;
 }
 
 #music-content{
@@ -1224,5 +1224,44 @@ input {
   display: none;
 }
 #editing-window-img1{
+  display: none;
+}
+
+
+
+
+/*files*/
+
+#documents-filewindow,
+#pictures-filewindow,
+#music-filewindow,
+#videos-filewindow,
+#downloads-filewindow,
+#devices-filewindow{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#documents-filewindow{
+  display: none;
+}
+#pictures-filewindow{
+  display: none;
+}
+
+#music-filewindow{
+  display: none;
+}
+
+#videos-filewindow{
+  display: none;
+}
+
+#downloads-filewindow{
+  display: none;
+}
+
+#devices-filewindow{
   display: none;
 }
