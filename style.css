@@ -1265,3 +1265,36 @@ input {
 #devices-filewindow{
   display: none;
 }
+
+
+.progress-container{
+  width: 200px;
+  height: 20px;
+  background-color: white;
+  border: 2px groove var(--button-active);
+}
+#disc-e-bar{
+  width: 90%;
+  background-color: #ff0000;
+  transition: 0.5s;
+}
+#disc-e-bar:hover{
+  width: 100%;
+}
+
+.progress-bar{
+  width: 70%;
+  height: 100%;
+  background-color: #0000FF;
+}
+.name-disc{
+  text-align: center;
+  padding: 10px;
+
+}
+.disc-level{
+  text-align: end;
+}
+.progress-main-box{
+  padding: 20px;
+}
