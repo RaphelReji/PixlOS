@@ -23,7 +23,7 @@
     --text-disabled: #808080;
 
     /* Desktop icons and taskbar */
-    --taskbar-bg: #c0c0c091;
+    --taskbar-bg: #0f1219b8;
     --taskbar-border: #FFFFFF;
     --desktop-icon-hover: #000080;
     --selection-bg: #000080;
@@ -112,7 +112,9 @@ button {
     background 0.2s ease;
 }
 .dock-app:hover {
-    transform: translateY(-5px) scale(1.02);
+     transform: translateY(-10px) scale(1.12);
+
+    background: rgba(255, 255, 255, 0.16);
 }
 .dock-app.active::after {
     content: "";
@@ -1305,6 +1307,7 @@ input {
 /* welcome screen and boot*/
 
 #welcome-screen {
+  
   background-image: url(assets/background/day.jpg);
   background-position: center;
   background-size: cover;
@@ -1360,4 +1363,29 @@ input {
   padding: 10px;
   margin-left: 20px;
   padding-top: 22px;
+}
+
+#desktop-h1{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  filter: opacity(0.7);
+  font-size: 64px;
+  margin: 10px 0;
+  font-family: "Quicksand",cursive;
+  color: var(--text-light);
+}
+
+
+#boot-progress-container{
+  width: 400px;
+  height: 30px;
+  background-color: var(--bg-secondary);
+  justify-self:center;
+}
+
+#boot-progress-bar{
+  width: 0%;
+  height: 100%;
+  background-color: var(--text-disabled);
 }
