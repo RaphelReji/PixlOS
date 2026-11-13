@@ -582,8 +582,9 @@ text-align: center;
   margin-left: 25px;
 }
 #thispc-filewindow{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 a{
@@ -1238,7 +1239,6 @@ input {
 #videos-filewindow,
 #downloads-filewindow,
 #devices-filewindow{
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
