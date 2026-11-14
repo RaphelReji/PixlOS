@@ -47,5 +47,44 @@ startButton.addEventListener("click", function(){
 
     }, 1000);
 
+   setTimeout(function(){
+
+        bootText.textContent =
+            "> Starting PIXLOS...\n> Loading desktop... \n> Fetching data...";
+
+    }, 1500);
+
+       setTimeout(function(){
+
+        bootText.textContent =
+            "> Starting PIXLOS...\n> Loading desktop... \n> Fetching data... \n> Connecting......";
+
+    }, 2000);
+
+
+
+    setTimeout(function(){
+
+        bootText.textContent =
+            "> Starting PIXLOS...\n> Loading desktop... \n> Fetching data... \n> Connecting...... \n> Server located...";
+
+    }, 2500);
+
+
+    setTimeout(function(){
+
+        bootText.textContent =
+            "> Starting PIXLOS...\n> Loading desktop... \n> Fetching data... \n> Connecting...... \n> Server located... \n> Running Commands...";
+
+    }, 3000);
+
+
+    setTimeout(function(){
+
+        bootText.textContent =
+            "> Starting PIXLOS...\n> Loading desktop... \n> Fetching data... \n> Connecting...... \n> Server located... \n> Running Commands... \n> Instalising.....";
+
+    }, 3500);
+
 
 });

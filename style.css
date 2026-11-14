@@ -1308,7 +1308,7 @@ input {
 
 #welcome-screen {
   
-  background-image: url(assets/background/day.jpg);
+  background-image: url(assets/background/boot1.0.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1331,7 +1331,7 @@ input {
     display: none;
     min-height: 100vh;
     padding: 40px;
-    background-image: url(assets/background/night.jpg);
+    background-image: url(assets/background/kit.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1382,10 +1382,50 @@ input {
   height: 30px;
   background-color: var(--bg-secondary);
   justify-self:center;
+  margin: 20px;
 }
 
 #boot-progress-bar{
   width: 0%;
   height: 100%;
   background-color: var(--text-disabled);
+}
+
+#start-button{
+  padding: 20px 20px;
+  background-color: var(--bg-secondary);
+  font-family:var(--font-main) ;
+  font-size: 30px;
+  border: 3px groove var(--pixel-black);
+  position: fixed;
+  margin: 0 auto;
+  bottom: 25%;
+  right: 40%;
+  transition: 0.3s;
+}
+
+#start-button:hover{
+  background-color: var(--accent-red);
+  color: white;
+  font-weight: 500;
+  filter: grayscale(120%);
+  border: 5px groove var(--pixel-black);
+}
+
+#boot-text{
+  padding: 10px;
+  border: 1px solid var(--bg-tertiary);
+  background-color: var(--taskbar-bg);
+  color: var(--bg-tertiary);
+  transition: 0.3s;
+}
+
+#progressText{
+  width: 100px;
+  height: 100px;
+  text-align: middle;
+  border-radius: 50%;
+  border: 2px dashed var(--bg-tertiary);
+  color: var(--text-light);
+  background-color: #00ffff36;
 }
