@@ -32,6 +32,13 @@ shopButtons.forEach(function(button){
 homeWindow.style.display ="block";
 shopButtons[0].classList.add("active");
 
+const clickSoundEffect = new Audio("assets/audios/click.mp3");
+
+function clickSound() {
+    clickSoundEffect.currentTime = 0;
+    clickSoundEffect.play();
+}
+
 const browserIcon = document.getElementById("open-browser");
 const browserinstallBtn = document.getElementById("browser-install-btn");
 browserinstallBtn.addEventListener("click", function(){
@@ -62,6 +69,7 @@ browserinstallBtn.addEventListener("click", function(){
 
      setTimeout(() => {
       browserIcon.style.display = "block";
+      clickSound();
     browserinstallBtn.textContent = "Installed";
     browserinstallBtn.style.color = "blue";
   },800);
