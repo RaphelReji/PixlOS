@@ -1446,3 +1446,15 @@ input {
 #open-notes{
   display: none;
 }
+#open-editor{
+  display: none;
+}
+#open-terminal{
+  display: none;
+}
+#open-bot{
+  display: none;
+}
+#open-game{
+  display: none;
+}
