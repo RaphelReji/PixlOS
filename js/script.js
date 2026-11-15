@@ -141,6 +141,19 @@ makeDraggable(
 );
 
 
+const openStart=document.getElementById("open-start");
+openStart.addEventListener("click",  function(){
+    if (startWindow.style.display==="block"){
+        startWindow.style.display="none";
+    }
+
+    else{
+        startWindow.style.display="block";
+    }
+}
+);
+
+
 const closeStart=document.getElementById("close-start");
 closeStart.addEventListener("click",function(){
     startWindow.style.display="none";

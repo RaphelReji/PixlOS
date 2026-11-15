@@ -31,3 +31,38 @@ shopButtons.forEach(function(button){
 
 homeWindow.style.display ="block";
 shopButtons[0].classList.add("active");
+
+const browserIcon = document.getElementById("open-browser");
+const browserinstallBtn = document.getElementById("browser-install-btn");
+browserinstallBtn.addEventListener("click", function(){
+  setTimeout(() => {
+    browserinstallBtn.textContent = "Instaling.";
+    browserinstallBtn.style.color = "green";
+  }, 100);
+
+   setTimeout(() => {
+    browserinstallBtn.textContent = "Instaling....."
+  }, 200);
+
+    setTimeout(() => {
+    browserinstallBtn.textContent = "Instaling."
+  }, 300);
+
+   setTimeout(() => {
+    browserinstallBtn.textContent = "Instaling....."
+  },400);
+
+      setTimeout(() => {
+    browserinstallBtn.textContent = "Instaling."
+  }, 500);
+
+   setTimeout(() => {
+    browserinstallBtn.textContent = "Instaling....."
+  },600);
+
+     setTimeout(() => {
+      browserIcon.style.display = "block";
+    browserinstallBtn.textContent = "Installed";
+    browserinstallBtn.style.color = "blue";
+  },800);
+})

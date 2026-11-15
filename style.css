@@ -1429,3 +1429,10 @@ input {
   color: var(--text-light);
   background-color: #00ffff36;
 }
+
+
+/*store app install*/
+
+#open-browser{
+  display: none;
+}

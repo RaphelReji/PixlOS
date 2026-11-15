@@ -3,7 +3,7 @@ const choices =[ 'rock' , 'paper','scissors'];
 const computerChoice = choices[Math.floor(Math.random() * choices.length)];
 
 
-let resultText=`You chose ${playerChoice}. Computer chose ${computerChoice}.`;
+let resultText=`You chose ${playerChoice}. pirate cat chose ${computerChoice}.`;
 
 if(playerChoice === computerChoice){
   resultText += "Its a tie!"
