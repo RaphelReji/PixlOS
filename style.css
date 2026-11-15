@@ -1436,3 +1436,13 @@ input {
 #open-browser{
   display: none;
 }
+
+#open-files{
+  display: none;
+}
+#open-music{
+  display: none;
+}
+#open-notes{
+  display: none;
+}

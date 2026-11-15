@@ -1,4 +1,3 @@
-
 const appearanceBtn=document.getElementById("appearance-btn");
 const wallpaperBtn=document.getElementById("wallpaper-btn");
 const soundBtn=document.getElementById("sound-btn");
@@ -9,7 +8,7 @@ const appearanceWindow=document.getElementById("appearance-window");
 const wallpaperWindow=document.getElementById("wallpaper-window");
 const soundWindow=document.getElementById("sound-window");
 const systemWindow=document.getElementById("system-window");
-const aboutWindow=document.getElementById("about-window")
+const aboutWindow=document.getElementById("about-window");
 
 appearanceBtn.addEventListener("click",function(){
     appearanceWindow.style.display="block";

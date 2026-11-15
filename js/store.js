@@ -73,4 +73,118 @@ browserinstallBtn.addEventListener("click", function(){
     browserinstallBtn.textContent = "Installed";
     browserinstallBtn.style.color = "blue";
   },800);
-})
+});
+
+
+const filesIcon = document.getElementById("open-files");
+const filesinstallBtn = document.getElementById("files-install-btn");
+filesinstallBtn.addEventListener("click", function(){
+  setTimeout(() => {
+    filesinstallBtn.textContent = "Instaling.";
+    filesinstallBtn.style.color = "green";
+  }, 100);
+
+   setTimeout(() => {
+    filesinstallBtn.textContent = "Instaling....."
+  }, 200);
+
+    setTimeout(() => {
+    filesinstallBtn.textContent = "Instaling."
+  }, 300);
+
+   setTimeout(() => {
+    filesinstallBtn.textContent = "Instaling....."
+  },400);
+
+      setTimeout(() => {
+    filesinstallBtn.textContent = "Instaling."
+  }, 500);
+
+   setTimeout(() => {
+    filesinstallBtn.textContent = "Instaling....."
+  },600);
+
+     setTimeout(() => {
+      filesIcon.style.display = "block";
+      clickSound();
+    filesinstallBtn.textContent = "Installed";
+    filesinstallBtn.style.color = "blue";
+  },800);
+});
+
+
+
+const musicIcon = document.getElementById("open-music");
+const musicinstallBtn = document.getElementById("music-install-btn");
+musicinstallBtn.addEventListener("click", function(){
+  setTimeout(() => {
+    musicinstallBtn.textContent = "Instaling.";
+    musicinstallBtn.style.color = "green";
+  }, 100);
+
+   setTimeout(() => {
+    musicinstallBtn.textContent = "Instaling....."
+  }, 200);
+
+    setTimeout(() => {
+    musicinstallBtn.textContent = "Instaling."
+  }, 300);
+
+   setTimeout(() => {
+    musicinstallBtn.textContent = "Instaling....."
+  },400);
+
+      setTimeout(() => {
+    musicinstallBtn.textContent = "Instaling."
+  }, 500);
+
+   setTimeout(() => {
+    musicinstallBtn.textContent = "Instaling....."
+  },600);
+
+     setTimeout(() => {
+      musicIcon.style.display = "block";
+      clickSound();
+    musicinstallBtn.textContent = "Installed";
+    musicinstallBtn.style.color = "blue";
+  },800);
+});
+
+
+
+
+const notesIcon = document.getElementById("open-notes");
+const notesinstallBtn = document.getElementById("notes-install-btn");
+notesinstallBtn.addEventListener("click", function(){
+  setTimeout(() => {
+    notesinstallBtn.textContent = "Instaling.";
+    notesinstallBtn.style.color = "green";
+  }, 100);
+
+   setTimeout(() => {
+    notesinstallBtn.textContent = "Instaling....."
+  }, 200);
+
+    setTimeout(() => {
+    notesinstallBtn.textContent = "Instaling."
+  }, 300);
+
+   setTimeout(() => {
+    notesinstallBtn.textContent = "Instaling....."
+  },400);
+
+      setTimeout(() => {
+    notesinstallBtn.textContent = "Instaling."
+  }, 500);
+
+   setTimeout(() => {
+    notesinstallBtn.textContent = "Instaling....."
+  },600);
+
+     setTimeout(() => {
+      notesIcon.style.display = "block";
+      clickSound();
+    notesinstallBtn.textContent = "Installed";
+    notesinstallBtn.style.color = "blue";
+  },800);
+});
