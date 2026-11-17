@@ -1,4 +1,7 @@
-const appearanceBtn=document.getElementById("appearance-btn");
+
+document.addEventListener("DOMContentLoaded", function () {
+
+   const appearanceBtn=document.getElementById("appearance-btn");
 const wallpaperBtn=document.getElementById("wallpaper-btn");
 const soundBtn=document.getElementById("sound-btn");
 const systemBtn=document.getElementById("system-btn");
@@ -282,3 +285,5 @@ lookupdateBtn.addEventListener("click",function(){
     }, 4000);
 
 })
+
+});
