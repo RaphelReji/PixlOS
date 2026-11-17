@@ -1454,6 +1454,7 @@ input {
   width: 60px;
   height: 250px;
   background: #ffffff;
+  color: #000;
   border-radius: 0 0 6px 6px;
   z-index: 1;
 }
