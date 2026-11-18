@@ -105,6 +105,12 @@ document.querySelector("#day-theme-btn").onclick=()=>{
     root.style.setProperty("--text-primary","black")
     root.style.setProperty("--taskbar-border","white")
     root.style.setProperty("--window-border-dark","black")
+    root.style.setProperty("--button-hover","#5972c5")
+    root.style.setProperty("--text-light","#b1abab")
+    root.style.setProperty("--bg-secondary","#f7efef")
+    root.style.setProperty("--taskbar-bg","#d4d4d4a2")
+
+
 }
 
 document.querySelector("#night-theme-btn").onclick=()=>{
@@ -115,6 +121,8 @@ document.querySelector("#night-theme-btn").onclick=()=>{
     root.style.setProperty("--window-border-dark","black")
     root.style.setProperty("--button-hover","#2c2b2b")
     root.style.setProperty("--text-light","#ece6e6")
+    root.style.setProperty("--bg-secondary","#0c0c0c")
+    root.style.setProperty("--taskbar-bg","#2b2a2aa2")
 }
 
 document.querySelector("#wood-theme").onclick=()=>{
@@ -125,6 +133,8 @@ document.querySelector("#wood-theme").onclick=()=>{
     root.style.setProperty("--window-border-dark","black")
     root.style.setProperty("--button-hover","#eeddbc")
     root.style.setProperty("--text-light","#ece6e6")
+     root.style.setProperty("--bg-secondary","#f1d9a8")
+    root.style.setProperty("--taskbar-bg","#e6ce9fb2")
 }
 
 document.querySelector("#red-theme").onclick=()=>{
@@ -135,16 +145,20 @@ document.querySelector("#red-theme").onclick=()=>{
     root.style.setProperty("--window-border-dark","black")
     root.style.setProperty("--button-hover","#f88f8f")
     root.style.setProperty("--text-light","#ece6e6")
+    root.style.setProperty("--bg-secondary","#df5757")
+    root.style.setProperty("--taskbar-bg","#f0a0a0")
 }
 
 document.querySelector("#hacker-theme").onclick=()=>{
-    root.style.setProperty("--window-bg","#3dec45")
-    root.style.setProperty("--window-title","#9ce969")
-    root.style.setProperty("--text-primary","black")
+    root.style.setProperty("--window-bg","#030303")
+    root.style.setProperty("--window-title","#bee9a2")
+    root.style.setProperty("--text-primary","#61f002")
     root.style.setProperty("--taskbar-border","yellowgreen")
     root.style.setProperty("--window-border-dark","black")
-    root.style.setProperty("--button-hover","#95db6c")
-    root.style.setProperty("--text-light","#ece6e6")
+    root.style.setProperty("--button-hover","#5eff00")
+    root.style.setProperty("--text-light","#00ff15")
+    root.style.setProperty("--bg-secondary","#000000")
+    root.style.setProperty("--taskbar-bg","#050505")
 }
 
 document.querySelector("#reset-btn").onclick=()=>{
@@ -155,6 +169,8 @@ document.querySelector("#reset-btn").onclick=()=>{
     root.style.setProperty("--window-border-dark","#404040")
     root.style.setProperty("--button-hover","#D6D6D6")
     root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--bg-secondary","#404040")
+    root.style.setProperty("--taskbar-bg","#0f1219b8")
 }
 
 document.querySelector("#purple-theme").onclick=()=>{
@@ -165,6 +181,8 @@ document.querySelector("#purple-theme").onclick=()=>{
     root.style.setProperty("--window-border-dark","#f5f0f0")
     root.style.setProperty("--button-hover","#19307c")
     root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--bg-secondary","#5906f3d5")
+    root.style.setProperty("--taskbar-bg","#4d04f7cc")
 }
 
 document.querySelector("#orange-theme").onclick=()=>{
@@ -174,7 +192,9 @@ document.querySelector("#orange-theme").onclick=()=>{
     root.style.setProperty("--taskbar-border","#0e0e0e")
     root.style.setProperty("--window-border-dark","#f5f0f0")
     root.style.setProperty("--button-hover","#d39770")
-    root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--text-light","#FFFFFF");
+    root.style.setProperty("--bg-secondary","#ec5904e1")
+    root.style.setProperty("--taskbar-bg","#f36201b6")
 }
 
 
@@ -185,7 +205,9 @@ document.querySelector("#yellow-theme").onclick=()=>{
     root.style.setProperty("--taskbar-border","#0e0e0e")
     root.style.setProperty("--window-border-dark","#f5f0f0")
     root.style.setProperty("--button-hover","#ccd370")
-    root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--text-light","#FFFFFF");
+    root.style.setProperty("--bg-secondary","#ecfd01da")
+    root.style.setProperty("--taskbar-bg","#eeff05de")
 }
 
 document.querySelector("#cyan-theme").onclick=()=>{
@@ -196,6 +218,8 @@ document.querySelector("#cyan-theme").onclick=()=>{
     root.style.setProperty("--window-border-dark","#f5f0f0")
     root.style.setProperty("--button-hover","#70d3ce")
     root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--bg-secondary","#0bf1d3d0")
+    root.style.setProperty("--taskbar-bg","#05ffd5d0")
 }
 
 document.querySelector("#indigo-theme").onclick=()=>{
@@ -205,7 +229,9 @@ document.querySelector("#indigo-theme").onclick=()=>{
     root.style.setProperty("--taskbar-border","#0e0e0e")
     root.style.setProperty("--window-border-dark","#f5f0f0")
     root.style.setProperty("--button-hover","#9670d3")
-    root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--text-light","#FFFFFF");
+    root.style.setProperty("--bg-secondary","#9670d3")
+    root.style.setProperty("--taskbar-bg","#9670d3de")
 }
 
 document.querySelector("#black-theme").onclick=()=>{
@@ -216,6 +242,8 @@ document.querySelector("#black-theme").onclick=()=>{
     root.style.setProperty("--window-border-dark","#0c0b0b")
     root.style.setProperty("--button-hover","#231f38")
     root.style.setProperty("--text-light","#FFFFFF")
+    root.style.setProperty("--bg-secondary","#000000")
+    root.style.setProperty("--taskbar-bg","#020202de")
 }
 
 
