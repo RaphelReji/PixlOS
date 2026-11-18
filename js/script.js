@@ -152,12 +152,28 @@ const miniBoxnotes = document.getElementById("minimise-box-notes");
 const miniBoxsettings = document.getElementById("minimise-box-settings");
 const miniBoxBrowser = document.getElementById("minimise-box-browser");
 const miniBoxFiles = document.getElementById("minimise-box-files");
+const miniBoxStore = document.getElementById("minimise-box-store");
+const miniBoxTerminal = document.getElementById("minimise-box-terminal");
+const miniBoxPiano = document.getElementById("minimise-box-piano");
+const miniBoxMusic = document.getElementById("minimise-box-music");
+const miniBoxEditor = document.getElementById("minimise-box-editor");
+const miniBoxBot = document.getElementById("minimise-box-bot");
+const miniBoxGame = document.getElementById("minimise-box-game");
+
 
 const miniBtnStart = document.getElementById("minimize-start");
 const miniBtnnotes = document.getElementById("minimize-notes");
 const miniBtnSettings = document.getElementById("minimize-settings");
 const miniBtnBrowser = document.getElementById("minimize-browser");
 const miniBtnFiles = document.getElementById("minimize-files");
+const miniBtnStore = document.getElementById("minimize-store");
+const miniBtnTerminal = document.getElementById("minimize-terminal");
+const miniBtnPiano = document.getElementById("minimize-piano");
+const miniBtnMusic= document.getElementById("minimize-music");
+const miniBtnEditor= document.getElementById("minimize-editor");
+const miniBtnBot= document.getElementById("minimize-bot");
+const miniBtnGame= document.getElementById("minimize-game");
+
 
 
 
@@ -266,6 +282,7 @@ openStore.addEventListener("click",  function(){
 const closeStore=document.getElementById("close-store");
 closeStore.addEventListener("click",function(){
     storeWindow.style.display="none";
+    miniBoxStore.style.display = "none";
 });
 
 
@@ -284,6 +301,7 @@ openGame.addEventListener("click",  function(){
 const closeGame=document.getElementById("close-game");
 closeGame.addEventListener("click",function(){
     gameWindow.style.display="none";
+    miniBoxGame.style.display = "none";
 });
 
 
@@ -303,6 +321,7 @@ openTerminal.addEventListener("click",  function(){
 const closeTerminal=document.getElementById("close-terminal");
 closeTerminal.addEventListener("click",function(){
     terminalWindow.style.display="none";
+    miniBoxTerminal.style.display = "none";
 });
 
 
@@ -322,6 +341,7 @@ openBot.addEventListener("click",  function(){
 const closeBot=document.getElementById("close-bot");
 closeBot.addEventListener("click",function(){
     botWindow.style.display="none";
+    miniBoxBot.style.display = "none";
 });
 
 
@@ -340,6 +360,7 @@ openMusic.addEventListener("click",  function(){
 const closeMusic=document.getElementById("close-music");
 closeMusic.addEventListener("click",function(){
     musicWindow.style.display="none";
+    miniBoxMusic.style.display = "none";
 });
 
 
@@ -358,6 +379,7 @@ openEditor.addEventListener("click",  function(){
 const closeEditor=document.getElementById("close-editor");
 closeEditor.addEventListener("click",function(){
     editorWindow.style.display="none";
+    miniBoxEditor.style.display = "none";
 });
 
 
@@ -375,11 +397,12 @@ openPiano.addEventListener("click",  function(){
 const closePiano=document.getElementById("close-piano");
 closePiano.addEventListener("click",function(){
     pianoWindow.style.display="none";
+    miniBoxPiano.style.display = "none";
 });
 
 
 
-//minimising dot js
+//minimising dot in icon js
 
 
 miniBtnStart.addEventListener("click", function(){
@@ -405,4 +428,38 @@ miniBtnBrowser.addEventListener("click", function(){
 miniBtnFiles.addEventListener("click", function(){
     filesWindow.style.display = "none";
     miniBoxFiles.style.display = "flex";
+});
+miniBtnStore.addEventListener("click", function(){
+    storeWindow.style.display = "none";
+    miniBoxStore.style.display = "flex";
+});
+
+miniBtnTerminal.addEventListener("click", function(){
+    terminalWindow.style.display = "none";
+    miniBoxTerminal.style.display = "flex";
+});
+
+miniBtnPiano.addEventListener("click", function(){
+    pianoWindow.style.display = "none";
+    miniBoxPiano.style.display = "flex";
+});
+
+miniBtnMusic.addEventListener("click", function(){
+    musicWindow.style.display = "none";
+    miniBoxMusic.style.display = "flex";
+});
+
+miniBtnEditor.addEventListener("click", function(){
+    editorWindow.style.display = "none";
+    miniBoxEditor.style.display = "flex";
+});
+
+miniBtnBot.addEventListener("click", function(){
+    botWindow.style.display = "none";
+    miniBoxBot.style.display = "flex";
+});
+
+miniBtnGame.addEventListener("click", function(){
+    gameWindow.style.display = "none";
+    miniBoxGame.style.display = "flex";
 });
