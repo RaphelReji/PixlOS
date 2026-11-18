@@ -200,7 +200,7 @@ button {
   font-weight: 500;
 }
 #browser-window-content{
-  background-image: url(assets/background/browserbg.jpg);
+  background-image: url(assets/background/kit.jpg);
 }
 
 .minimize-btn{
@@ -393,20 +393,25 @@ min-height: fit-content;
 }
 #search-form{
   width: fit-content;
-  background-color:transparent;
+  background-color:rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(20px);
-    border-radius: 22px;
+    border-radius: 10px;
     box-shadow: 0 10px 35px rgba(0, 0, 0, 0.35);
     margin: 40px auto;
+    border: 2px solid var(--window-border-dark);
+    
 }
 #search{
   width: 200px;
   height: 30px;
+  padding-left: 5px;
   background-color: transparent;
 }
 #search-form button{
   height: 30px;
   width:40px;
+  color: #fff;
+  border-radius:  0 10px 10px 0;
   background-color: transparent;
 }
 #browser-time{
@@ -618,7 +623,6 @@ a{
   margin:0;
   color:var(--text-light);
   text-align: left;
-  color: rgb(41, 39, 39);
   font-weight: 500;
   background-color: var(--bg-secondary);
   border: 1px solid var(--window-border-dark);
@@ -630,17 +634,17 @@ a{
   background-color: var(--button-active);
 }
 #shop-first-grid{
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-secondary);
   padding: 12px 8px;
   border-radius: 10px;
   border: 2px solid var(--window-border-dark);
-
+  color: var(--text-light);
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
 #shop-second-grid{
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-secondary);
   padding: 18px;
   border-radius: 10px;
   margin: 0;
@@ -653,7 +657,7 @@ a{
   height: 75px;
   justify-content: space-between;
   display: flex;
-  background: #020749;
+  background: var(--bg-secondary);
   padding: 15px 20px;
   border-radius: 8px;
   color: var(--text-light);
