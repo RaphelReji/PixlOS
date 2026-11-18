@@ -44,6 +44,7 @@ const terminalWindow=document.getElementById("terminal-window");
 const botWindow = document.getElementById("bot-window");
 const musicWindow = document.getElementById("music-window");
 const editorWindow  = document.getElementById("editor-window");
+const pianoWindow = document.getElementById("piano-window");
 
 let highestZIndex = 100;
 
@@ -138,6 +139,10 @@ makeDraggable(
 makeDraggable(
     editorWindow,
     editorWindow.querySelector(".window-bar")
+);
+makeDraggable(
+    pianoWindow,
+    pianoWindow.querySelector(".window-bar")
 );
 
 
@@ -333,4 +338,21 @@ openEditor.addEventListener("click",  function(){
 const closeEditor=document.getElementById("close-editor");
 closeEditor.addEventListener("click",function(){
     editorWindow.style.display="none";
+});
+
+
+const openPiano=document.getElementById("open-piano");
+openPiano.addEventListener("click",  function(){
+    if (pianoWindow.style.display==="block"){
+        pianoWindow.style.display="none";
+    }
+
+    else{
+        pianoWindow.style.display="block";
+    }
+}
+);
+const closePiano=document.getElementById("close-piano");
+closePiano.addEventListener("click",function(){
+    pianoWindow.style.display="none";
 });
