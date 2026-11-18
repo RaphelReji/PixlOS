@@ -4,6 +4,7 @@ const shopButtons = document.querySelectorAll(".shop-first-grid-btns");
 const homeWindow = document.getElementById("store-home-window");
 const appsWindow = document.getElementById("store-apps-window");
 const gamessWindow = document.getElementById("game-home-window");
+const storeupdateWindow = document.getElementById("update-home-window");
 
 
 shopButtons.forEach(function(button){
@@ -17,6 +18,7 @@ shopButtons.forEach(function(button){
     homeWindow.style.display  = "none";
     appsWindow.style.display = "none";
     gamessWindow.style.display = "none";
+    storeupdateWindow.style.display = "none";
 
     const page = button.dataset.page;
 
@@ -30,6 +32,9 @@ shopButtons.forEach(function(button){
 
     else if( page ==="games"){
       gamessWindow.style.display = "block";
+    }
+    else if(page ==="updates"){
+      storeupdateWindow.style.display = "block";
     }
   });
 });
@@ -385,4 +390,28 @@ const gamessinstallBtn = document.getElementById("game-install-btn-games");
 gamessinstallBtn.addEventListener("click", function(){
   gamessWindow.style.display = "none";
   appsWindow.style.display = "block";
+});
+
+
+const storeUpadateBtn = document.getElementById("storeUpdateBtn");
+const storeUpadateText = document.getElementById("storeUpdateText");
+
+storeUpadateBtn.addEventListener("click", function(){
+ setTimeout(() => {
+  storeUpadateBtn.style.display = "none";
+  storeUpadateText.style.display = "block";
+ }, 500);
+  setTimeout(() => {
+  storeUpadateText.textContent = "Looking for updates....."
+ }, 1000);
+   setTimeout(() => {
+  storeUpadateText.textContent = "Checking all the apps"
+ }, 1400);
+    setTimeout(() => {
+  storeUpadateText.textContent = "All IS UPTO DATE!"
+ }, 2200);
+     setTimeout(() => {
+   storeUpadateBtn.style.display = "flex";
+   storeUpadateText.style.display = "none";
+ }, 2500);
 });
