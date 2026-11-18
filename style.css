@@ -696,6 +696,9 @@ a{
   border-radius: 10px;
   transition: 0.3s;
 }
+.main-app-card.comming{
+  filter: grayscale(200%);
+}
 
 .featured-app-card:hover,
 .main-app-card:hover{
@@ -789,6 +792,9 @@ border-color: var(--bg-primary);
 }
 #store-apps-window{
   display:none;
+}
+#game-home-window{
+  display: none;
 }
 
 

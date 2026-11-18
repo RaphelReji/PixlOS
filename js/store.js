@@ -3,6 +3,7 @@ const shopButtons = document.querySelectorAll(".shop-first-grid-btns");
 
 const homeWindow = document.getElementById("store-home-window");
 const appsWindow = document.getElementById("store-apps-window");
+const gamessWindow = document.getElementById("game-home-window");
 
 
 shopButtons.forEach(function(button){
@@ -15,6 +16,7 @@ shopButtons.forEach(function(button){
 
     homeWindow.style.display  = "none";
     appsWindow.style.display = "none";
+    gamessWindow.style.display = "none";
 
     const page = button.dataset.page;
 
@@ -24,6 +26,10 @@ shopButtons.forEach(function(button){
 
     else if (page === "apps"){
       appsWindow.style.display = "block";
+    }
+
+    else if( page ==="games"){
+      gamessWindow.style.display = "block";
     }
   });
 });
@@ -371,4 +377,12 @@ pianoinstallBtn.addEventListener("click", function(){
     pianoinstallBtn.textContent = "Installed";
     pianoinstallBtn.style.color = "blue";
   },800);
+});
+
+
+const gamessinstallBtn = document.getElementById("game-install-btn-games");
+
+gamessinstallBtn.addEventListener("click", function(){
+  gamessWindow.style.display = "none";
+  appsWindow.style.display = "block";
 });
