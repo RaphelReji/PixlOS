@@ -335,3 +335,40 @@ gameinstallBtn.addEventListener("click", function(){
     gameinstallBtn.style.color = "blue";
   },800);
 });
+
+
+const pianoIcon = document.getElementById("open-piano");
+const pianoinstallBtn = document.getElementById("piano-install-btn");
+pianoinstallBtn.addEventListener("click", function(){
+  setTimeout(() => {
+    pianoinstallBtn.textContent = "Instaling.";
+    pianoinstallBtn.style.color = "green";
+  }, 100);
+
+   setTimeout(() => {
+    pianoinstallBtn.textContent = "Instaling....."
+  }, 200);
+
+    setTimeout(() => {
+    pianoinstallBtn.textContent = "Instaling."
+  }, 300);
+
+   setTimeout(() => {
+    pianoinstallBtn.textContent = "Instaling....."
+  },400);
+
+      setTimeout(() => {
+    pianoinstallBtn.textContent = "Instaling."
+  }, 500);
+
+   setTimeout(() => {
+    pianoinstallBtn.textContent = "Instaling....."
+  },600);
+
+     setTimeout(() => {
+      pianoIcon.style.display = "block";
+      clickSound();
+    pianoinstallBtn.textContent = "Installed";
+    pianoinstallBtn.style.color = "blue";
+  },800);
+});

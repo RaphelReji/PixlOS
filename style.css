@@ -137,10 +137,16 @@ button {
   background: var(--bg-secondary);
   border-bottom: 2px solid var(--window-border-dark);
 }
+#logo{
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  filter: grayscale(130%);
+}
 .brand{
   font-weight: 600;
   font-family: var(--font-silkscreen);
-  font-size: 18px;
+  font-size: 25px;
   z-index: 1;
 }
 .desktop-content{
@@ -1430,10 +1436,6 @@ input {
   background-color: #00ffff36;
 }
 
-#piano-window{
-  display: block;
-}
-
 .piano{
   display: flex;
   padding-bottom: 20px;
@@ -1508,5 +1510,8 @@ input {
   display: none;
 }
 #open-game{
+  display: none;
+}
+#open-piano{
   display: none;
 }
