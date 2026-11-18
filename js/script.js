@@ -148,7 +148,10 @@ makeDraggable(
 
 
 const miniBoxStart = document.getElementById("minimise-box-start");
+const miniBoxnotes = document.getElementById("minimise-box-notes");
+
 const miniBtnStart = document.getElementById("minimize-start");
+const miniBtnnotes = document.getElementById("minimize-notes");
 
 
 const openStart=document.getElementById("open-start");
@@ -185,6 +188,7 @@ openNotes.addEventListener("click",  function(){
 const closeNotes=document.getElementById("close-notes");
 closeNotes.addEventListener("click",function(){
     notesWindow.style.display="none";
+     miniBoxnotes.style.display = "none";
 });
 
 const openSettings=document.getElementById("open-settings");
@@ -371,4 +375,9 @@ closePiano.addEventListener("click",function(){
 miniBtnStart.addEventListener("click", function(){
     startWindow.style.display = "none";
     miniBoxStart.style.display = "flex";
-})
+});
+
+miniBtnnotes.addEventListener("click", function(){
+    notesWindow.style.display = "none";
+    miniBoxnotes.style.display = "flex";
+});
