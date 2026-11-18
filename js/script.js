@@ -149,9 +149,16 @@ makeDraggable(
 
 const miniBoxStart = document.getElementById("minimise-box-start");
 const miniBoxnotes = document.getElementById("minimise-box-notes");
+const miniBoxsettings = document.getElementById("minimise-box-settings");
+const miniBoxBrowser = document.getElementById("minimise-box-browser");
+const miniBoxFiles = document.getElementById("minimise-box-files");
 
 const miniBtnStart = document.getElementById("minimize-start");
 const miniBtnnotes = document.getElementById("minimize-notes");
+const miniBtnSettings = document.getElementById("minimize-settings");
+const miniBtnBrowser = document.getElementById("minimize-browser");
+const miniBtnFiles = document.getElementById("minimize-files");
+
 
 
 const openStart=document.getElementById("open-start");
@@ -205,6 +212,7 @@ openSettings.addEventListener("click",  function(){
 const closeSettings=document.getElementById("close-settings");
 closeSettings.addEventListener("click",function(){
     settingsWindow.style.display="none";
+    miniBoxsettings.style.display = "none";
 });
 
 const openBrowser=document.getElementById("open-browser");
@@ -221,6 +229,7 @@ openBrowser.addEventListener("click",  function(){
 const closeBrowser=document.getElementById("close-browser");
 closeBrowser.addEventListener("click",function(){
     browserWindow.style.display="none";
+    miniBoxBrowser.style.display = "none";
 });
 
 
@@ -238,6 +247,7 @@ openFiles.addEventListener("click",  function(){
 const closeFiles=document.getElementById("close-files");
 closeFiles.addEventListener("click",function(){
     filesWindow.style.display="none";
+    miniBoxFiles.style.display = "none";
 });
 
 
@@ -380,4 +390,19 @@ miniBtnStart.addEventListener("click", function(){
 miniBtnnotes.addEventListener("click", function(){
     notesWindow.style.display = "none";
     miniBoxnotes.style.display = "flex";
+});
+
+miniBtnSettings.addEventListener("click", function(){
+    settingsWindow.style.display = "none";
+    miniBoxsettings.style.display = "flex";
+});
+
+miniBtnBrowser.addEventListener("click", function(){
+    browserWindow.style.display = "none";
+    miniBoxBrowser.style.display = "flex";
+});
+
+miniBtnFiles.addEventListener("click", function(){
+    filesWindow.style.display = "none";
+    miniBoxFiles.style.display = "flex";
 });
