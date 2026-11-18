@@ -312,6 +312,6 @@ lookupdateBtn.addEventListener("click",function(){
         lookupdateBtn.style.display="flex";
     }, 4000);
 
-})
+});
 
 });

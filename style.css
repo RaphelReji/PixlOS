@@ -221,7 +221,7 @@ button {
 }
  
 .stystem-info{
-  background-color: var(--bg-tertiary);
+  background-color: var(--bg-secondary);
   padding: 10px 20px;
   border: 2px solid var(--window-border-light);
   font-weight: bold;

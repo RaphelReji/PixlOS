@@ -400,6 +400,7 @@ storeUpadateBtn.addEventListener("click", function(){
  setTimeout(() => {
   storeUpadateBtn.style.display = "none";
   storeUpadateText.style.display = "block";
+  storeUpadateText.textContent = "";
  }, 500);
   setTimeout(() => {
   storeUpadateText.textContent = "Looking for updates....."
@@ -409,9 +410,9 @@ storeUpadateBtn.addEventListener("click", function(){
  }, 1400);
     setTimeout(() => {
   storeUpadateText.textContent = "All IS UPTO DATE!"
- }, 2200);
+ }, 1900);
      setTimeout(() => {
    storeUpadateBtn.style.display = "flex";
    storeUpadateText.style.display = "none";
- }, 2500);
+ }, 3000);
 });
