@@ -1539,3 +1539,18 @@ input {
   text-align: center;
   color: var(--text-disabled);
 }
+
+.app-box{
+  position: relative;
+}
+
+.minimise-box{
+  display: none;
+  top: 40px;
+  left: 2px;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  background-color: #00FFFF;
+  position: absolute;
+}

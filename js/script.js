@@ -146,6 +146,11 @@ makeDraggable(
 );
 
 
+
+const miniBoxStart = document.getElementById("minimise-box-start");
+const miniBtnStart = document.getElementById("minimize-start");
+
+
 const openStart=document.getElementById("open-start");
 openStart.addEventListener("click",  function(){
     if (startWindow.style.display==="block"){
@@ -162,6 +167,7 @@ openStart.addEventListener("click",  function(){
 const closeStart=document.getElementById("close-start");
 closeStart.addEventListener("click",function(){
     startWindow.style.display="none";
+    miniBoxStart.style.display = "none";
 });
 
 
@@ -356,3 +362,13 @@ const closePiano=document.getElementById("close-piano");
 closePiano.addEventListener("click",function(){
     pianoWindow.style.display="none";
 });
+
+
+
+//minimising dot js
+
+
+miniBtnStart.addEventListener("click", function(){
+    startWindow.style.display = "none";
+    miniBoxStart.style.display = "flex";
+})
