@@ -27,6 +27,8 @@ PixlOS is a Retro X Mac-themed webOS that runs in your browser. You can explore,
 - Multiple built-in applications.
 - Music player.
 - Rock paper Scissors game.
+- Minimize dot in app logo
+- etc..........
 
 ## Applications
 

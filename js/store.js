@@ -416,3 +416,13 @@ storeUpadateBtn.addEventListener("click", function(){
    storeUpadateText.style.display = "none";
  }, 3000);
 });
+
+
+const logomp3 = document.getElementById("logo-mp3");
+const logo = document.getElementById("logo");
+logo.addEventListener("dblclick", function(){
+  logomp3.play();
+});
+logo.addEventListener("click", function(){
+  logomp3.pause();
+});

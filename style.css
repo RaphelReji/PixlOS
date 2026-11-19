@@ -1546,3 +1546,7 @@ input {
   background-color: #00FFFF;
   position: absolute;
 }
+
+#start-window{
+  display: block;
+}
