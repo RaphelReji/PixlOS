@@ -1,85 +1,98 @@
 # PixlOS
 
-Welcome to my README.Here i am explaining the idea,the features,how everything works and the resources i used in this project.
+PixlOS is a Retro X Mac-themed webOS that runs in your browser. You can explore, play games, browse, listen to music and try out different applications. There's a lot to discover! Some Application's did't install yet so go to store and install..
 
-## About PixlOS
+## Preview
 
-This is a web based OS called ***PIXLOS***.I made this WebOS for Hackclub  WebOS jam. It is fully retro themed and have some owesome features.This one is web playable so anyone can test it.I added **4 apps** in that you can change background etc.. way more .Its very interesting to build and learn .check it out and  if you have any suggestions feel free to tell. 
+![PixlOS boot screen](readmeimg/1.png)
+
+![PixlOS booting](readmeimg/2.png)
+
+![PixlOS applications](readmeimg/3.png)
+
+![PixlOS Desktop](readmeimg/4.png)
 
 ## Live Demo
 
-[Open the live website]()
+**[ PixlOS link](YOUR)**
 
 ## Features
 
-* Desktop environment
-* Draggable app windows
-* 3 working apps
-* Clock
-* Custom backgrounds
-* Appearance settings
-* Retro-themed interface
+- Retro X Mac-themed desktop.
+- Draggable application windows.
+- Open and close application windows.
+- Real-time clock.
+- Custom boot animation.
+- Animated boot progress bar with an increasing percentage counter.
+- Multiple built-in applications.
+- Music player.
+- Rock paper Scissors game.
 
-## Screenshots
+## Applications
 
-![home](assets/readme/1.png)
+I built different applications for the desktop so there's more to do than just look around.
 
+- **File Manager** – Browse and manage files inside PixlOS.
+- **Notes** – Write down anything.
+- **Pixel AI** – My built-in AI assistant interface.
+- **Terminal** – A terminal-style application.
+- **Settings** – Change some settings.
+- **Image Editor** – edit images.
+- **Music Player** – Play music and chill.
+- **Piano** – A polished virtual piano built using HTML, CSS and JavaScript.
+- **Store** – An App Store-style place to explore applications and download.
+- **Game** – Play game inside PixlOS, including Rock Paper Scissors.
 
-## The Apps
+## Boot Animation
 
-###  Notes
+The boot animation is one of my favourite parts of PixlOS.
 
-The Notes app is a simple app to write notes.
-Its a simple app blended with retro theme.just try it out its the first app!
+I created a custom image for the boot background and spent quite a bit of time getting it the way I wanted. I also added animations to the boot screen, including the progress bar and the percentage counter that increases as the system boots.
 
-###  Settings
+It's a small part of the project, but I'm really happy with how it turned out.
 
-The Settings app is a app to change the theme,appearance , wallpaper and more.
+## Technologies Used
 
-###  Browser
+- HTML
+- CSS
+- JavaScript
 
-Browser is a app featuring a search bar and 4 card with real clock on that.
+## How to Run Locally
 
+1. Clone the repository:
 
-###  Files
+   ```bash
+   git clone https://github.com/RaphelReji/PixlOS.git
+   ```
 
- The file app is normal windows file explorer but it was in v1.
-
-
-## Installation to run locally
-
-1. Clone this repository:
-```bash
-git clone https://github.com/RaphelReji/WildOS.git
-```
-Repository url:
-```bash
-git clone https://github.com/RaphelReji/WildOS
-```
-
-2. Open the project folder in VS Code or any code editor.
+2. Open the PixlOS folder in VS Code or another code editor.
 
 3. Open `index.html` in your browser.
 
-### How It Works
-You want to explore like a nornal OS, customise the theme etc.... .
+That's it! PixlOS runs in your browser.
 
-## Design
- just pure retro themed one . 
+## Development
 
+PixlOS is built with:
 
-## Resources
-* WebOS mission resources
-* Other webos projects references
+- An `index.html` file containing 1,500+ lines.
+- 7–8 JavaScript files.
+- A CSS file containing 1,000+ lines.
 
-## Credits 
+I worked on the desktop, applications, animations and different parts of the interface to bring everything together into one web-based desktop environment.
 
- - I used pixbay to likely take everything
- - images belong to the rightful owner
- - icons:Taken from icon8 and oldpcicons
+## Credits & Acknowledgements
 
- ## License
+- **Pixl YSWS – Hack Club:** Inspiration and name for the project.
+- **Hack Club WebOS jam Guide:** Used as a guide during development.
+- **WildOS:** My previous project, which I used as a starting reference.
+- **Pixabay:** Music resources used in the project.
+- **OldPCIcons:** Icons used in the project.
+- **Icons8:** Additional icon resources.
+- **Google:** Used as a reference while building the Piano application.
 
-This project was created under MIT-do what ever with it.
+Third-party assets belong to their respective creators and owners.
+
+---
 
 Thanks for checking out ****PIXLOS****.

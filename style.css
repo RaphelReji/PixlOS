@@ -913,8 +913,7 @@ input {
   height: 600PX;
   overflow: scroll;
 }
-
-#bot-chat-window{
+#bot-image-window{
   display: none;
 }
 #create-img1-container{
